@@ -20,11 +20,11 @@ npm start               # http://localhost:4200
 | Folder | Committed | Deployed | Contents |
 |---|---|---|---|
 | `public/data/official/` | yes | yes | ISTQB Sample Exam A + ASTQB 2019 (reuse allowed, non-commercial, with credit) |
-| `public/data/sources/` | **no** (gitignored) | **no** (excluded from production builds) | the full verified bank, for local dev |
+| `public/data/sources/` | yes | yes | the full verified bank (1527 questions) |
 | Import page | — | — | any JSON file, stored in this browser's IndexedDB only |
 
-The scraped practice banks are third-party content, so they are never committed or deployed.
-On the deployed site, load them through **Import**.
+The practice banks are third-party content collected for personal study; the ISTQB/ASTQB samples are the only files with an explicit reuse licence.
+To update the bank: edit the JSON files, run `npm run sync-data`, commit and push; Netlify redeploys.
 
 ## Features
 

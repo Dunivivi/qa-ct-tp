@@ -1,0 +1,706 @@
+{
+  "site": "Multiple unofficial sites (questions and options only)",
+  "exam": "ISTQB CT-PT: Certified Tester Performance Testing",
+  "method": "Questions and answer options were copied from the unofficial sources listed per question. Correct answers were NOT taken from those sources: each was determined by the reviewer against the official ISTQB CT-PT syllabus v1.0 (2018), https://www.istqb.org/wp-content/uploads/2024/11/ISTQB-CT-PT_Syllabus_v1.0_2018.pdf. Where a source showed an answer, it is kept in sourceClaimedAnswers for comparison.",
+  "sourcesUsed": [
+    "CertMage",
+    "CertsHero",
+    "ExamTopics",
+    "Examice",
+    "Pass4Success",
+    "ProcessExam",
+    "ValidExamDumps",
+    "iSecPrep PDF (ProcessExam)"
+  ],
+  "notCollected": {
+    "ExamTopics": "pages 2-12 behind a verification/login check",
+    "CertsHero": "pages 2-14 behind a CAPTCHA",
+    "Examice": "questions 6-120 paywalled",
+    "Tutorialspoint": "URL redirects to a course sales page"
+  },
+  "scrapedAt": "2026-11-16T14:09:44+00:00",
+  "totalQuestions": 17,
+  "questions": [
+    {
+      "number": 1,
+      "type": "multiple_choice",
+      "question": "This is the activity in which the scope of performance is established:",
+      "choices": {
+        "A": "Test control",
+        "B": "Test analysis",
+        "C": "Test planning",
+        "D": "Test defining"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Test planning"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 Test Planning: \"this is the activity in which the scope of performance testing is established\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "iSecPrep PDF (ProcessExam)": "C"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "iSecPrep PDF (ProcessExam)"
+      ],
+      "urls": [
+        "https://www.isecprep.com/wp-content/uploads/2023/03/ISTQB-CT-PT-Question-Answer.pdf"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "C",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing in the Software Lifecycle",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 11,
+      "type": "multiple_choice",
+      "question": "A call-center CRM vendor will populate its performance test database by extracting two million customer records from production. Because the records contain names, phone numbers and home addresses, these fields will be masked before import, as required under GDPR. The masking replaces every surname with one of 50 generated values and every postcode with a single test postcode.\nWhich statement should the performance test plan record about this approach?",
+      "choices": {
+        "A": "Masking keeps the production data characteristics intact, so the plan records no test data risk for masked records",
+        "B": "Masked production data must not be used, so the tests should run against the unmasked customer records instead",
+        "C": "Masking removes the requirement to back up and restore the database between test cycles",
+        "D": "Masking is required but adds risk, since masked data may not share the characteristics of real-world data"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Masking is required but adds risk, since masked data may not share the characteristics of real-world data"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 Test Data: masking is mandatory under GDPR but \"adds risk ... as it may not have the same data characteristics as seen in real-world use\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "D"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 12,
+      "type": "multiple_choice",
+      "question": "A performance test script for a conference registration site simulates an attendee submitting a registration form. For the \"submit registration\" transaction, the measured transaction response time is 1.8 seconds, and the script applies a think time of 12 seconds to represent the attendee reviewing the form before pressing Submit.\nWhat is the elapsed time for this transaction?",
+      "choices": {
+        "A": "1.8 seconds",
+        "B": "13.8 seconds",
+        "C": "12 seconds",
+        "D": "10.2 seconds"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "13.8 seconds"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.2.3: transaction response time + think time = elapsed time, so 1.8 + 12 = 13.8 s.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "B"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 13,
+      "type": "multiple_choice",
+      "question": "During each test cycle, a team runs a load testing tool, two stand-alone monitoring tools and a log analysis tool.\nWhy is it essential to time-synchronize all of these tools?",
+      "choices": {
+        "A": "So that all information from one test execution cycle can be located and analyzed together",
+        "B": "So that the monitoring tools add less probe effect to the system under test during each test cycle",
+        "C": "So that the stand-alone monitors start and stop at exactly the same moment as the load generators",
+        "D": "So that think times are applied consistently"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "So that all information from one test execution cycle can be located and analyzed together"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.2.8: \"time-synchronize all tools used, so that all information related to a specific test execution cycle can be located\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "A"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 14,
+      "type": "multiple_choice",
+      "question": "A municipal transit authority is planning performance tests for its new ticketing app. The draft plan defines response-time targets for buying and validating tickets on riders' phones, agreed in workshops with a rider panel. The platform's operations team, who must complete nightly backups and restart the servers before the first trains run, was not consulted.\nWhich of the following BEST describes the weakness in this plan?",
+      "choices": {
+        "A": "The tests will not be affordable or executable within the timeframe set by the project",
+        "B": "The tests cannot be repeated with statistically identical results on an unchanged system",
+        "C": "The tests are not aligned with the expectations of the operations staff",
+        "D": "The rider panel should not have set the targets"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The tests are not aligned with the expectations of the operations staff"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 1.1: tests must be aligned with the expectations of stakeholder groups, in particular users, system designers and operations staff.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "C"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "C",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 15,
+      "type": "multiple_choice",
+      "question": "A streaming-radio mobile app talks to its backend through a sequence of requests that was never documented, and the developers who built it have left the organization. The performance tester must create a script for the play-station operational profile that reproduces the client's behavior as faithfully as possible, and a working copy of the app is available on a test device.\nWhich approach is MOST appropriate for creating the script?",
+      "choices": {
+        "A": "Program the requests from the testers' best reconstruction of the calls, since programmed scripts are easier to maintain than recorded ones",
+        "B": "Use a crowd of real listeners instead, since a script cannot be built for an interaction that is not documented",
+        "C": "Derive the script from the load profile",
+        "D": "Record the client's communication at protocol level, since recording reproduces the real sequence"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Record the client's communication at protocol level, since recording reproduces the real sequence"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.2.7: \"Recording usually ensures that it exactly simulates the real system, while programming relies on knowledge of the proper request sequence\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "D"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 16,
+      "type": "multiple_choice",
+      "question": "A consortium is building a shared public library catalog for a whole region. How many member libraries will join, and therefore how many simultaneous users the catalog must serve, will not be known for at least 18 months. The architecture must be decided now.\nWhich risk mitigation is BEST?",
+      "choices": {
+        "A": "Design for highly variable scalability, such as on-demand cloud resources",
+        "B": "Postpone the performance risk analysis until the number of simultaneous users can be specified",
+        "C": "Size the servers for the libraries committed today and run a capacity test shortly before release",
+        "D": "Buy fixed hardware now for a worst-case user estimate, then run a stress test at that level"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Design for highly variable scalability, such as on-demand cloud resources"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 3.3: when simultaneous users cannot be specified early, design for highly variable scalability (e.g. on-demand cloud resources).",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "A"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing in the Software Lifecycle",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 17,
+      "type": "multiple_choice",
+      "question": "For a load test of a public library catalog, the team enabled detailed method-level tracing agents on every catalog server. Search response times were 30% worse than in an otherwise identical run with tracing disabled, at the same load and with the same data.\nWhich of the following BEST explains the concern this raises?",
+      "choices": {
+        "A": "Endurance degradation: response times worsen over the run as memory leaks build up in the servers",
+        "B": "Network throughput saturation caused by the load generators",
+        "C": "A test oracle gap: without defined requirements, nobody can tell whether a 30% slower search is acceptable",
+        "D": "The probe effect: collecting metrics should impact system performance no more than minimally"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "The probe effect: collecting metrics should impact system performance no more than minimally"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 2.3: metric collection should impact performance no more than minimally (the \"probe effect\").",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "D"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 18,
+      "type": "multiple_choice",
+      "question": "A payroll SaaS provider will run its performance tests on the staging environment. The same environment is used by a user acceptance testing (UAT) team from another department, whose testers work from 09:00 to 17:00 on weekdays. The tester is preparing a briefing for the infrastructure and operations engineers who support staging.\nWhich point is MOST important to include in this briefing?",
+      "choices": {
+        "A": "That tooling, scripting and load generation details are of secondary interest to this audience",
+        "B": "The balance between the cost of the planned tests and how representative the results will be of production",
+        "C": "The scheduling of the tests on the shared staging environment, so UAT activity does not distort results",
+        "D": "The connection between the product risks and what the planned performance tests set out to show"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The scheduling of the tests on the shared staging environment, so UAT activity does not distort results"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 communicating with technology-focused stakeholders: \"Where test environments are to be shared, the scheduling of performance tests must be communicated\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "C"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "C",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 19,
+      "type": "multiple_choice",
+      "question": "An architecture review of a regional court's multi-tier case-management system found its tier design sound. A developer then implements the case-history search, which follows chains of linked case references, as a recursive function rather than an iterative loop.\nA tester asks whether this choice matters for performance. Which of the following statements is BEST?",
+      "choices": {
+        "A": "No; performance risks come from the architecture category, and the review has already covered the multi-tier risks for this system",
+        "B": "Yes; decisions down to single functions, such as recursion versus iteration, also create performance risks",
+        "C": "Yes, because recursion leaks memory whenever the language allows direct heap memory management, such as C and C++",
+        "D": "No; algorithm choices affect functional correctness, so they are checked in functional testing rather than for performance efficiency"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Yes; decisions down to single functions, such as recursion versus iteration, also create performance risks"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 3.2: technical decisions extend \"down to the design of individual functions or methods (e.g., the choice of a recursive as opposed to an iterative algorithm)\".",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "B"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing in the Software Lifecycle",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 20,
+      "type": "multiple_choice",
+      "question": "On a smart-meter platform, a real-time aggregation component (A) must supply consolidated readings to a real-time grid-balancing component (B) every 200 milliseconds. From the first minute of every test run, A produces an update only every 350 milliseconds, even when it is the only process running and its memory use stays low. B therefore misses its deadlines and the overall system fails to respond in time.\nWhich action is MOST appropriate?",
+      "choices": {
+        "A": "Evaluate and modify A's code modules through performance profiling",
+        "B": "Run an endurance test on A to locate the memory leak that slows it over time",
+        "C": "Add memory to the platform and prioritize A's requests for dynamic memory",
+        "D": "Stress test B with input rates beyond its specified limits to find its breaking point"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Evaluate and modify A's code modules through performance profiling"
+      ],
+      "confidence": "medium",
+      "explanation": "The component is slow from the first minute, with low memory and no competing load, so this is an inefficient algorithm/code issue (not a memory leak or a resource shortage). Profiling the code is the fitting action.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "ProcessExam": "A"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "ProcessExam"
+      ],
+      "urls": [
+        "https://www.processexam.com/istqb/istqb-ct-pt-certification-exam-sample-questions"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 25,
+      "type": "multiple_choice",
+      "question": "You are managing the testing efforts of an existing distributed system that manages inventories of automobile and light truck tires from multiple warehouses across the country. The system is being enhanced to track incoming restocking shipments at the point of entry to the warehouse and outbound sales shipments at the point of shipment from the warehouse, all of which are executed in real-time. System loads traditionally peak on Mondays due to built-up demand from the previous weekend.\nYou are preparing a presentation to the business stakeholders, outlining your performance testing strategy.\nWhich of the following is appropriate to present to this audience?",
+      "choices": {
+        "A": "Established HTTP response per second goals that will have acceptable minimum, maximum, and average response times",
+        "B": "A test plan that includes specific technical specifications for the computing hardware to be used for performance testing",
+        "C": "A comprehensive list of support staff to be available during performance testing, including key members of the application development team",
+        "D": "The risks that may exist due to platform differences between the test environment and the production environment"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "The risks that may exist due to platform differences between the test environment and the production environment"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 business-focused stakeholders: communicate the balance between test cost and how representative results are of production. Platform-difference risk is exactly this.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": null,
+      "agreesWithSourceClaim": null,
+      "sources": [
+        "ExamTopics",
+        "Examice",
+        "Pass4Success"
+      ],
+      "urls": [
+        "https://examice.com/exams/istqb/ct-pt",
+        "https://www.examtopics.com/exams/istqb/ct-pt/view/",
+        "https://www.pass4success.com/istqb/exam/ct-pt"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "medium",
+        "status": "confirmed",
+        "confidence": "medium"
+      },
+      "alsoAppearsIn": [
+        "P2PExams Q7"
+      ],
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 26,
+      "type": "multiple_choice",
+      "question": "You are managing the testing efforts of an existing distributed system that manages inventories of automobile and light truck tires from multiple warehouses across the country. The system is being enhanced to track incoming restocking shipments at the point of entry to the warehouse and outbound sales shipments at the point of shipment from the warehouse, all of which are executed in real-time. System loads traditionally peak on Mondays due to built-up demand from the previous weekend.\nYou are preparing a presentation for a group of technical stakeholders, outlining your performance testing strategy. Which of the following is appropriate to present to this audience?",
+      "choices": {
+        "A": "The difficulty in repeating this test a sufficient number of times before the scheduled release date",
+        "B": "A list of support staff to be available during performance testing, including key members of the application development team",
+        "C": "The cost to lease a cloud-based platform to conduct performance testing",
+        "D": "The cost associated with the overall project with an emphasis on development and testing"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "A list of support staff to be available during performance testing, including key members of the application development team"
+      ],
+      "confidence": "medium",
+      "explanation": "Syllabus 2018 4.1 technology-focused stakeholders: make the expected involvement of technical staff and their scheduled tasks clear. Costs (C, D) and test repeatability difficulty (A) are listed for business stakeholders.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": null,
+      "agreesWithSourceClaim": null,
+      "sources": [
+        "ExamTopics"
+      ],
+      "urls": [
+        "https://www.examtopics.com/exams/istqb/ct-pt/view/"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "medium",
+        "status": "confirmed",
+        "confidence": "medium"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 40,
+      "type": "multiple_choice",
+      "question": "Which of the following should be a key part of your test acceptance criteria in your performance test plan?",
+      "choices": {
+        "A": "Convincing technical and business stakeholders to provide realistic performance goals for the regional servers",
+        "B": "Describing the system under test in order to provide context to the metrics",
+        "C": "Highlighting any technical differences in the hardware between the test environment and the production environment",
+        "D": "Documenting previously baselined performance metrics in order to compare these to the new performance measurements"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Documenting previously baselined performance metrics in order to compare these to the new performance measurements"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 Acceptance Criteria: relate to baseline values (previously achieved measurements) for comparison.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": null,
+      "agreesWithSourceClaim": null,
+      "sources": [
+        "CertsHero"
+      ],
+      "urls": [
+        "https://www.certshero.com/istqb/ct-pt/practice-test"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 41,
+      "type": "multiple_choice",
+      "question": "During which of the principal performance testing activities are the building blocks for larger, more complex tests created?",
+      "choices": {
+        "A": "During test completion",
+        "B": "During test planning",
+        "C": "During test design",
+        "D": "During test implementation"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "During test design"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 4.1 Test Design: test cases \"are generally created in modular form so that they may be used as the building blocks of larger, more complex performance tests\". CertEmpire (Q7) claims test implementation, which is wrong.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": null,
+      "agreesWithSourceClaim": null,
+      "sources": [
+        "CertsHero"
+      ],
+      "urls": [
+        "https://www.certshero.com/istqb/ct-pt/practice-test"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "C",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "alsoAppearsIn": [
+        "CertEmpire Q7"
+      ],
+      "chapter": "Performance Testing in the Software Lifecycle",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 43,
+      "type": "multiple_choice",
+      "question": "Which of the following is a key challenge when testing applications in a cloud environment?",
+      "choices": {
+        "A": "Limited ability to control test execution timing",
+        "B": "Inability to generate significant load",
+        "C": "Lack of user behavior simulation tools",
+        "D": "Test execution speed being too high"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Limited ability to control test execution timing"
+      ],
+      "confidence": "low",
+      "explanation": "Not covered directly by the syllabus. B, C and D are false (the cloud is good at generating load and tools exist), so A is the only defensible option, but it is an unusual phrasing.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "CertMage": "A"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "CertMage"
+      ],
+      "urls": [
+        "https://certmage.com/practice-tests/ct-pt/"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "low",
+        "status": "flagged",
+        "confidence": "medium",
+        "note": "Not covered by the syllabus; B, C and D are false, so A is the only defensible option."
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 45,
+      "type": "multiple_choice",
+      "question": "Which of the following is usually identified by a performance test?",
+      "choices": {
+        "A": "Resource bottlenecks",
+        "B": "Suitability issues",
+        "C": "Learnability concerns",
+        "D": "Failure to meet accessibility requirements"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Resource bottlenecks"
+      ],
+      "confidence": "high",
+      "explanation": "Syllabus 2018 1.3.2: dynamic performance testing identifies potential bottlenecks and resource utilization issues.",
+      "answeredBy": "reviewer (verified against ISTQB CT-PT syllabus 2018)",
+      "sourceClaimedAnswers": {
+        "CertMage": "A"
+      },
+      "agreesWithSourceClaim": true,
+      "sources": [
+        "CertMage"
+      ],
+      "urls": [
+        "https://certmage.com/practice-tests/ct-pt/"
+      ],
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    }
+  ],
+  "verificationSummary": {
+    "date": "2026-11-16",
+    "counts": {
+      "confirmed": 16,
+      "flagged": 1
+    },
+    "legend": {
+      "confirmed": "independent syllabus-based answer matches",
+      "corrected": "source answer was wrong; fixed (original kept in sourceAnswer)",
+      "multiple-correct": "syllabus supports more than one option; all listed",
+      "flagged": "question is flawed/incomplete/disputed; answer kept, see note",
+      "corrected-earlier": "fixed in an earlier review and confirmed by this check"
+    }
+  },
+  "dedupNote": "Removed 29 question(s) that duplicate a question kept in a higher-priority file (official ISTQB > ASTQB > ExamCademy > Mock Exam Network > OpenExamPrep > unofficial sites > CertEmpire > P2PExams). Removed numbers: [2, 3, 4, 5, 6, 7, 8, 9, 10, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 42, 44, 46]."
+}

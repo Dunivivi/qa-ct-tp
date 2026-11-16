@@ -1,0 +1,1180 @@
+{
+  "site": "OpenExamPrep (open-exam-prep.com)",
+  "exam": "ISTQB CT-PT: Certified Tester Performance Testing",
+  "source": "https://open-exam-prep.com/practice/istqb-ct-pt",
+  "sourceNote": "Full free bank loaded by the page from /data/question-bank/istqb-ct-pt.json. Site states it is independent and not endorsed by ISTQB.",
+  "scrapedAt": "2026-11-16T13:47:49+00:00",
+  "totalQuestions": 34,
+  "questions": [
+    {
+      "number": 1,
+      "id": "istqb-ct-pt-q-001",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which performance test type validates the system under expected production load?",
+      "choices": {
+        "A": "Stress testing",
+        "B": "Load testing",
+        "C": "Spike testing",
+        "D": "Endurance testing"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Load testing"
+      ],
+      "explanation": "Load testing evaluates system behavior at expected/production load to confirm response time, throughput, and resource utilization meet targets. Stress testing pushes beyond capacity to find the breaking point. Spike testing applies sudden bursts. Endurance (soak) testing runs at normal load for an extended period to detect leaks and degradation.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 2,
+      "id": "istqb-ct-pt-q-002",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which performance test type increases load beyond expected capacity to identify the breaking point?",
+      "choices": {
+        "A": "Load testing",
+        "B": "Stress testing",
+        "C": "Smoke testing",
+        "D": "Compatibility testing"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Stress testing"
+      ],
+      "explanation": "Stress testing intentionally pushes the system past its expected capacity to find the breaking point and observe failure modes (graceful degradation vs catastrophic failure, recovery behavior). Load testing stays at expected demand. Smoke and compatibility testing are not performance test types.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 3,
+      "id": "istqb-ct-pt-q-003",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which test type applies sudden, brief bursts of load?",
+      "choices": {
+        "A": "Endurance",
+        "B": "Spike",
+        "C": "Volume",
+        "D": "Configuration"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Spike"
+      ],
+      "explanation": "Spike testing applies sudden, brief surges of load to verify the system can absorb traffic spikes and recover. Endurance/soak testing runs at normal load for hours/days. Volume testing focuses on large data sets. Configuration testing varies system configuration parameters.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 4,
+      "id": "istqb-ct-pt-q-004",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which performance test verifies the system can sustain expected load over a long period?",
+      "choices": {
+        "A": "Spike",
+        "B": "Endurance / soak",
+        "C": "Capacity",
+        "D": "Baseline"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Endurance / soak"
+      ],
+      "explanation": "Endurance (soak) testing runs the system at expected load for an extended duration (hours to days) to detect memory leaks, resource exhaustion, slow degradation, and cumulative effects that short tests miss. Capacity testing finds the maximum acceptable load. Baseline testing establishes a reference point for comparison.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 5,
+      "id": "istqb-ct-pt-q-005",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which is the primary KPI when measuring user-perceived speed?",
+      "choices": {
+        "A": "Throughput",
+        "B": "Response time",
+        "C": "Disk I/O",
+        "D": "Number of threads"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Response time"
+      ],
+      "explanation": "Response time — the time between request and complete response — is the primary user-perceived KPI. Throughput measures how many transactions per second the system handles. Disk I/O and thread count are infrastructure metrics, not user-facing KPIs.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 6,
+      "id": "istqb-ct-pt-q-006",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which is the BEST definition of throughput in performance testing?",
+      "choices": {
+        "A": "The maximum response time",
+        "B": "The number of transactions or requests processed per unit time",
+        "C": "The percentage of CPU used",
+        "D": "The total memory consumed"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The number of transactions or requests processed per unit time"
+      ],
+      "explanation": "Throughput measures the rate at which the system processes requests — typically transactions per second (TPS), requests per second (RPS), or messages per second. It is distinct from response time (time per request) and resource utilization (CPU, memory). Both throughput and response time should be reported together.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 7,
+      "id": "istqb-ct-pt-q-007",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Why are percentile response times (p95, p99) usually preferred over averages?",
+      "choices": {
+        "A": "Averages are harder to compute",
+        "B": "Averages can hide tail latencies that affect a real fraction of users",
+        "C": "Percentiles take less memory",
+        "D": "Percentiles always equal the median"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Averages can hide tail latencies that affect a real fraction of users"
+      ],
+      "explanation": "A small slow tail can ruin user experience for many users while leaving the average looking good. Reporting p95 (the value below which 95% of requests fall) and p99 surfaces the user experience for the slow minority. Pairing average with percentiles gives a complete picture.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 12,
+      "id": "istqb-ct-pt-q-012",
+      "category": "Activities",
+      "topics": [
+        "Littles Law"
+      ],
+      "difficulty": "hard",
+      "type": "multiple_choice",
+      "question": "Using Little's Law, if average response time including think time is 5 seconds and target throughput is 200 transactions/sec, how many concurrent users (L) are needed?",
+      "choices": {
+        "A": "40",
+        "B": "100",
+        "C": "200",
+        "D": "1000"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "1000"
+      ],
+      "explanation": "L = λ × W = 200 × 5 = 1000 concurrent users. Little's Law lets testers translate target throughput and expected per-user transaction time into the number of virtual users to simulate. Be careful with units (W in seconds, λ in TPS).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "D",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 13,
+      "id": "istqb-ct-pt-q-013",
+      "category": "Activities",
+      "topics": [
+        "Workload Modeling"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is 'think time' in workload modeling?",
+      "choices": {
+        "A": "The time the system takes to think",
+        "B": "The simulated pause between user actions in a script, modeling realistic behavior",
+        "C": "The time between deployments",
+        "D": "Compile time"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The simulated pause between user actions in a script, modeling realistic behavior"
+      ],
+      "explanation": "Think time is the simulated pause between user actions, representing realistic user behavior (reading a page, making a decision). Without think time, scripts produce unrealistically high concurrency. Pacing is a related concept that controls iteration rate. Both are essential in workload modeling.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 14,
+      "id": "istqb-ct-pt-q-014",
+      "category": "Activities",
+      "topics": [
+        "Correlation"
+      ],
+      "difficulty": "hard",
+      "type": "multiple_choice",
+      "question": "What is correlation in scripting load tests?",
+      "choices": {
+        "A": "Statistical relationship between throughput and CPU",
+        "B": "Capturing dynamic server-generated values (session IDs, tokens) and reusing them in subsequent requests",
+        "C": "Pairing two test environments",
+        "D": "Matching color schemes"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Capturing dynamic server-generated values (session IDs, tokens) and reusing them in subsequent requests"
+      ],
+      "explanation": "Correlation is the scripting technique of capturing server-generated dynamic values (session IDs, anti-CSRF tokens, view-states) and re-injecting them into later requests. Without correlation, replays fail because the server expects new values per session. JMeter post-processors, Gatling check, and LoadRunner web_reg_save_param implement correlation.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 15,
+      "id": "istqb-ct-pt-q-015",
+      "category": "Activities",
+      "topics": [
+        "Correlation"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is parameterization in performance test scripting?",
+      "choices": {
+        "A": "Replacing hard-coded values with variable data so different virtual users send different inputs",
+        "B": "Setting JVM parameters",
+        "C": "Switching cloud providers",
+        "D": "Tuning the database"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Replacing hard-coded values with variable data so different virtual users send different inputs"
+      ],
+      "explanation": "Parameterization replaces hard-coded values (usernames, search terms, IDs) with values drawn from a data file or generator so virtual users behave realistically and avoid cache hits. Without parameterization, all VUs hit the same data and metrics are misleading. JMeter CSV Data Set Config and Gatling feeders are typical mechanisms.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 23,
+      "id": "istqb-ct-pt-q-023",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST definition of latency in performance testing?",
+      "choices": {
+        "A": "Total bytes transferred",
+        "B": "Time between sending a request and receiving the first byte (or full response, depending on definition)",
+        "C": "Number of bytes per second",
+        "D": "Number of cores in the CPU"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Time between sending a request and receiving the first byte (or full response, depending on definition)"
+      ],
+      "explanation": "Latency is the delay before transfer of data begins after a request — sometimes time to first byte, sometimes full response time depending on definition. Bandwidth is total bytes per second. Latency and throughput together describe most performance dimensions; many tools allow you to break out network latency vs server time.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 26,
+      "id": "istqb-ct-pt-q-026",
+      "category": "Activities",
+      "topics": [
+        "Test Environment"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST justification for running performance tests in a production-like environment?",
+      "choices": {
+        "A": "Dev environments are too clean",
+        "B": "Different environments produce different results due to hardware, data volume, network, and topology — production-like is needed for credible numbers",
+        "C": "Test environments are unreliable",
+        "D": "All environments are equivalent"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Different environments produce different results due to hardware, data volume, network, and topology — production-like is needed for credible numbers"
+      ],
+      "explanation": "Performance is highly sensitive to hardware, data volume, network, topology, caching, and configuration. Tests in scaled-down or differently-configured environments cannot be trusted to predict production. Either run in production-like environments or carefully extrapolate with documented caveats.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 27,
+      "id": "istqb-ct-pt-q-027",
+      "category": "Activities",
+      "topics": [
+        "Workload Modeling"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is a 'workload model' in performance testing?",
+      "choices": {
+        "A": "A 3D model of the data center",
+        "B": "A description of user behaviors, mix, volume, and timing that drives the test",
+        "C": "A diagram of the team",
+        "D": "A type of database"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "A description of user behaviors, mix, volume, and timing that drives the test"
+      ],
+      "explanation": "A workload model defines the user behaviors (transactions/scripts), mix (relative frequency of each), volume (concurrent users or arrival rate), and timing (think times, pacing) that drive the test. A bad workload model produces results that do not reflect real production behavior. CT-PT requires familiarity with how to derive workload models from production data.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 48,
+      "id": "istqb-ct-pt-q-048",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Why are 'baseline tests' useful?",
+      "choices": {
+        "A": "They establish a stable reference point against which subsequent test results are compared",
+        "B": "They eliminate the need for further testing",
+        "C": "They train the developers",
+        "D": "They cool down the servers"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "They establish a stable reference point against which subsequent test results are compared"
+      ],
+      "explanation": "A baseline test establishes a known-good reference (response time, throughput, resource use) that subsequent tests are compared against — enabling regression detection. Baselines are repeated when major changes occur (architecture, infrastructure, datasets).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 49,
+      "id": "istqb-ct-pt-q-049",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is 'configuration testing' in the performance context?",
+      "choices": {
+        "A": "Testing only configuration files",
+        "B": "Varying system configurations (DB pool size, JVM heap, container limits) to find optimal settings",
+        "C": "Configuring the test tool",
+        "D": "Testing the network only"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Varying system configurations (DB pool size, JVM heap, container limits) to find optimal settings"
+      ],
+      "explanation": "Configuration testing varies system parameters — JVM heap size, GC settings, connection pool sizes, container CPU/memory limits, kernel settings, cache sizes — to find optimal performance configurations. Results often surprise teams (more memory does not always help; bigger pools sometimes hurt).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 51,
+      "id": "istqb-ct-pt-q-051",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is true about scalability testing?",
+      "choices": {
+        "A": "It validates only that the system runs",
+        "B": "It measures how performance changes as load, data, or hardware scales — looking for the system's scaling limits",
+        "C": "It tests only one user",
+        "D": "It is unrelated to performance"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "It measures how performance changes as load, data, or hardware scales — looking for the system's scaling limits"
+      ],
+      "explanation": "Scalability testing varies one dimension at a time (users, data, hardware/cores/nodes) and observes how performance metrics scale. Ideal scaling is linear with added resources; sub-linear scaling reveals bottlenecks (locks, shared resources, network, single-master patterns). Vertical scaling adds resources to a node; horizontal adds nodes.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 52,
+      "id": "istqb-ct-pt-q-052",
+      "category": "Modern",
+      "topics": [
+        "Reporting"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which is most appropriate when reporting performance results to executives?",
+      "choices": {
+        "A": "Detailed JMeter logs",
+        "B": "A clear summary of SLO compliance, key risks, headline numbers, and recommendations",
+        "C": "Raw GC logs",
+        "D": "Network packet captures"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "A clear summary of SLO compliance, key risks, headline numbers, and recommendations"
+      ],
+      "explanation": "Executive reports should focus on SLO compliance (pass/fail), key risks, headline KPIs (p99 response time, throughput, capacity), and recommended actions. Raw logs and packet captures belong in technical appendices. Effective communication of performance results is part of CT-PT.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 54,
+      "id": "istqb-ct-pt-q-054",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is true about 'error rate' as a KPI?",
+      "choices": {
+        "A": "It can be ignored if response times are low",
+        "B": "It must be tracked alongside response time and throughput; high error rate invalidates other metrics",
+        "C": "It only matters in production",
+        "D": "It is the same as latency"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "It must be tracked alongside response time and throughput; high error rate invalidates other metrics"
+      ],
+      "explanation": "High error rates invalidate other KPIs — fast 5xx responses are not 'good performance'. Error rate must be reported alongside response time and throughput. Performance test tools should fail the build when error rate exceeds threshold (k6 thresholds, JMeter assertions, Gatling assertions all support this).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 56,
+      "id": "istqb-ct-pt-q-056",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is the BEST way to model a sudden 10x traffic spike in a load test?",
+      "choices": {
+        "A": "Use a stress test only",
+        "B": "Use a spike scenario that ramps from baseline to 10x quickly and observes recovery",
+        "C": "Use endurance only",
+        "D": "Skip it"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Use a spike scenario that ramps from baseline to 10x quickly and observes recovery"
+      ],
+      "explanation": "Sudden 10x traffic surges are modeled with spike scenarios — quick ramp from baseline to peak, holding briefly, then ramp down — observing whether the system absorbs, queues, throttles gracefully, and recovers. Stress testing finds the breaking point under sustained ramp; endurance is long-duration.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 57,
+      "id": "istqb-ct-pt-q-057",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is most appropriate to detect a memory leak?",
+      "choices": {
+        "A": "A 5-minute load test",
+        "B": "An endurance test running for many hours, watching heap usage trend upward across GC cycles",
+        "C": "A single request",
+        "D": "A static analysis tool"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "An endurance test running for many hours, watching heap usage trend upward across GC cycles"
+      ],
+      "explanation": "Memory leaks manifest as a steady upward trend in heap occupancy across full GC cycles. They typically need hours of sustained load to show. Heap dump analysis (Eclipse MAT) then identifies the leaking class and retention path. Short tests miss leaks. Static analysis catches some patterns but not all.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 58,
+      "id": "istqb-ct-pt-q-058",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is the typical relationship between throughput and response time as load increases?",
+      "choices": {
+        "A": "Throughput rises with load until saturation, after which response time rises sharply",
+        "B": "Throughput always falls",
+        "C": "Response time always falls",
+        "D": "Both stay constant"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Throughput rises with load until saturation, after which response time rises sharply"
+      ],
+      "explanation": "As load grows, throughput rises proportionally until the system reaches a bottleneck (CPU, DB, network); after saturation, throughput plateaus or falls and response times rise sharply (a classic 'hockey stick'). Identifying the saturation point is a primary goal of capacity testing.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 63,
+      "id": "istqb-ct-pt-q-063",
+      "category": "Activities",
+      "topics": [
+        "Workload Modeling"
+      ],
+      "difficulty": "hard",
+      "type": "multiple_choice",
+      "question": "Which is the BEST way to ensure load tests reflect actual production traffic patterns?",
+      "choices": {
+        "A": "Guess the patterns",
+        "B": "Mine production logs/APM for transaction mix, arrival distribution, think times, and key entity volumes",
+        "C": "Use a single fixed pattern always",
+        "D": "Disable workload modeling"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Mine production logs/APM for transaction mix, arrival distribution, think times, and key entity volumes"
+      ],
+      "explanation": "Realistic workload models come from mining production telemetry — APM data, access logs, message-queue depth — for transaction mix, arrival distribution (often non-Poisson), peak windows, think times, and entity volumes. Synthetic guesses produce misleading results. Mature teams refresh workload models on a cadence.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 64,
+      "id": "istqb-ct-pt-q-064",
+      "category": "Activities",
+      "topics": [
+        "Test Process"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST justification for running performance tests early in development?",
+      "choices": {
+        "A": "To replace functional tests",
+        "B": "To detect performance regressions and architectural issues when fixes are cheapest",
+        "C": "To delay releases",
+        "D": "To increase costs"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "To detect performance regressions and architectural issues when fixes are cheapest"
+      ],
+      "explanation": "Shift-left performance testing (continuous performance testing) runs basic load and benchmarks in CI/CD so regressions are caught immediately, when fixes are cheapest. Waiting for a pre-release performance phase often surfaces architectural problems too late. Early tests should be fast (10-30 minutes) and gate merges.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing in the Software Lifecycle",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 65,
+      "id": "istqb-ct-pt-q-065",
+      "category": "Modern",
+      "topics": [
+        "Reporting"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which result format is most useful for comparing two test runs over time?",
+      "choices": {
+        "A": "JSON or CSV time-series with consistent metric names, ingested into a metrics store",
+        "B": "A free-text email",
+        "C": "A single number",
+        "D": "A screenshot only"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "JSON or CSV time-series with consistent metric names, ingested into a metrics store"
+      ],
+      "explanation": "Comparable time-series with consistent metric names — ingested into a metrics store like Grafana, InfluxDB, Prometheus, Datadog — let teams trend performance across runs and detect regressions. Single numbers, free text, and screenshots make trending impossible. Tooling like JMeter Backend Listener, k6 outputs, and Gatling Enterprise support this.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 66,
+      "id": "istqb-ct-pt-q-066",
+      "category": "Activities",
+      "topics": [
+        "Workload Modeling"
+      ],
+      "difficulty": "hard",
+      "type": "multiple_choice",
+      "question": "What is the typical reason a performance test produces inflated throughput numbers?",
+      "choices": {
+        "A": "Caching reduces work",
+        "B": "Lack of think time and pacing causes virtual users to fire requests far faster than humans would",
+        "C": "The network is fast",
+        "D": "The CPU is slow"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Lack of think time and pacing causes virtual users to fire requests far faster than humans would"
+      ],
+      "explanation": "Without think time and pacing, virtual users immediately re-fire iterations, producing inflated throughput that no real user pattern would generate. Realistic workload modeling requires modeling time between actions. Caching is a separate concern (often you should bypass it via parameterization to test the underlying system).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 67,
+      "id": "istqb-ct-pt-q-067",
+      "category": "Activities",
+      "topics": [
+        "Correlation"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "What is the typical reason a load test caches all responses without realizing?",
+      "choices": {
+        "A": "The CDN is misconfigured",
+        "B": "Virtual users hit the same parameter values, so the application or CDN serves cached content",
+        "C": "Random number seeds are wrong",
+        "D": "Memory is too small"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Virtual users hit the same parameter values, so the application or CDN serves cached content"
+      ],
+      "explanation": "Without parameterization, every virtual user makes the exact same request, so caches (HTTP cache, application cache, CDN, database query cache) hit on every call and the test fails to exercise the real path. Parameterizing inputs from a varied dataset is essential. CDN config is a separate concern.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 72,
+      "id": "istqb-ct-pt-q-072",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST description of 'capacity testing'?",
+      "choices": {
+        "A": "Measuring the maximum sustained load at which the system meets its SLOs",
+        "B": "Counting users",
+        "C": "Counting servers",
+        "D": "Counting requests per minute always"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Measuring the maximum sustained load at which the system meets its SLOs"
+      ],
+      "explanation": "Capacity testing finds the maximum sustained load at which the system still meets its SLOs (response time, error rate). It is the basis for capacity planning, hardware sizing, and auto-scaling configuration. Beyond capacity, the system enters degradation. CT-PT distinguishes capacity from stress (which seeks the breaking point).",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 74,
+      "id": "istqb-ct-pt-q-074",
+      "category": "Measurements",
+      "topics": [
+        "Kpis"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which is true about 'mean response time' as a single reported metric?",
+      "choices": {
+        "A": "It is the safest metric to report",
+        "B": "It can hide tail latency; should always be paired with percentiles",
+        "C": "It always equals the median",
+        "D": "It cannot be computed for load tests"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "It can hide tail latency; should always be paired with percentiles"
+      ],
+      "explanation": "Mean alone hides the tail; pair it with p50 (median), p95, and p99 — and ideally a histogram. A small but meaningful fraction of slow requests can ruin user experience while the mean stays palatable. Modern reporting standards include percentiles by default.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Measurement Fundamentals",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 77,
+      "id": "istqb-ct-pt-q-077",
+      "category": "Activities",
+      "topics": [
+        "Test Environment"
+      ],
+      "difficulty": "hard",
+      "type": "multiple_choice",
+      "question": "Which is the BEST mitigation when testing in a scaled-down environment?",
+      "choices": {
+        "A": "Pretend results are production-equivalent",
+        "B": "Document the scale-down ratio, calibrate with extrapolation, and validate critical findings in production-like environments",
+        "C": "Stop testing",
+        "D": "Always run only in production"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Document the scale-down ratio, calibrate with extrapolation, and validate critical findings in production-like environments"
+      ],
+      "explanation": "Scaled-down environments are common but introduce uncertainty. Best practice: document the scale-down (CPUs, memory, dataset size, network), calibrate findings with documented extrapolation, and validate critical decisions in production-like environments. Pretending equivalence misleads stakeholders.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 78,
+      "id": "istqb-ct-pt-q-078",
+      "category": "Activities",
+      "topics": [
+        "Test Process"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is true about 'monitoring during load tests'?",
+      "choices": {
+        "A": "Monitoring should be disabled during tests",
+        "B": "Server-side and client-side metrics must be captured to correctly diagnose bottlenecks",
+        "C": "Only client-side matters",
+        "D": "Only server-side matters"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Server-side and client-side metrics must be captured to correctly diagnose bottlenecks"
+      ],
+      "explanation": "Both client-side (response time, error rate, throughput from the load tool) and server-side (CPU, memory, GC, DB queries, APM traces) telemetry are needed. Without server-side, you only know something is slow but not why; without client-side, you cannot relate server resource usage to user-impacting behavior.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 83,
+      "id": "istqb-ct-pt-q-083",
+      "category": "Activities",
+      "topics": [
+        "Workload Modeling"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST description of 'transaction mix' in workload modeling?",
+      "choices": {
+        "A": "The total number of transactions",
+        "B": "The relative proportion of each business transaction type during the test (e.g., 60% search, 30% browse, 10% checkout)",
+        "C": "The order of test execution",
+        "D": "The hardware specification"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The relative proportion of each business transaction type during the test (e.g., 60% search, 30% browse, 10% checkout)"
+      ],
+      "explanation": "Transaction mix specifies the proportion of each business scenario in the workload. Mining production data is the standard way to derive a realistic mix; using a wrong mix can hide bottlenecks (e.g., over-testing search but under-testing checkout). Mixes also vary by hour and season.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 96,
+      "id": "istqb-ct-pt-q-096",
+      "category": "Fundamentals",
+      "topics": [
+        "Test Types"
+      ],
+      "difficulty": "easy",
+      "type": "multiple_choice",
+      "question": "Which is the BEST description of 'soak test' duration?",
+      "choices": {
+        "A": "A few minutes",
+        "B": "Hours to days at expected load to surface leaks and slow degradation",
+        "C": "Microseconds",
+        "D": "One iteration"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Hours to days at expected load to surface leaks and slow degradation"
+      ],
+      "explanation": "Soak (endurance) tests must run hours to days to surface memory leaks, file-handle leaks, slow database growth, and progressive degradation that short tests miss. Pre-release soaks of 24-72 hours are common for high-availability systems. Continuous canary monitoring extends the same idea into production.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    },
+    {
+      "number": 97,
+      "id": "istqb-ct-pt-q-097",
+      "category": "Activities",
+      "topics": [
+        "Test Environment"
+      ],
+      "difficulty": "medium",
+      "type": "multiple_choice",
+      "question": "Which is the BEST way to handle test data setup for performance testing?",
+      "choices": {
+        "A": "Generate or import realistic data volumes mirroring production scale; reset between runs to ensure repeatability",
+        "B": "Use a single row",
+        "C": "Use no data",
+        "D": "Use only string 'foo'"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Generate or import realistic data volumes mirroring production scale; reset between runs to ensure repeatability"
+      ],
+      "explanation": "Performance is highly sensitive to data volume — query plans, index efficiency, cache hit rates change with scale. Tests must run against realistic volumes and either reset between runs or be designed to tolerate growing data. Trivial data sets produce misleading results.",
+      "lastUpdated": "2026-04-16",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "A",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "chapter": "Performance Testing Tasks",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    }
+  ],
+  "verificationSummary": {
+    "date": "2026-11-16",
+    "counts": {
+      "confirmed": 34
+    },
+    "legend": {
+      "confirmed": "independent syllabus-based answer matches",
+      "corrected": "source answer was wrong; fixed (original kept in sourceAnswer)",
+      "multiple-correct": "syllabus supports more than one option; all listed",
+      "flagged": "question is flawed/incomplete/disputed; answer kept, see note",
+      "corrected-earlier": "fixed in an earlier review and confirmed by this check"
+    }
+  },
+  "scopeNote": "Filtered to ISTQB CT-PT syllabus topics only: kept 34 of 100. Removed questions on specific tools (k6, Gatling, JMeter, LoadRunner, Datadog, OpenTelemetry...), SRE metrics (Apdex, SLO, error budget), web vitals/modern protocols, resilience patterns and JVM/OS diagnostics, which the syllabus does not cover. Original numbers kept."
+}

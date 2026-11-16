@@ -1,6 +1,6 @@
-// Copies the question JSON files into public/data so `ng serve` can load them.
-// public/data/sources/ is gitignored: the scraped banks stay on this machine and are never deployed.
-// public/data/official/ holds only the ISTQB/ASTQB sample exams, which allow non-commercial reuse with credit.
+// Copies the question JSON files into public/data; both folders are committed and deployed.
+// Re-run after editing the bank, then commit, so the next deploy picks the change up.
+// public/data/official/ holds only the ISTQB/ASTQB sample exams; public/data/sources/ holds the full bank.
 import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 

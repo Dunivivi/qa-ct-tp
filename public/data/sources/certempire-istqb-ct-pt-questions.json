@@ -1,0 +1,60 @@
+{
+  "site": "Cert Empire (certempire.com)",
+  "exam": "ISTQB CT-PT: Certified Tester Performance Testing",
+  "source": "https://certempire.com/practice-tests/free-ct-pt-practice-questions/",
+  "sourceNote": "Free demo shows 10 of 20 questions; the rest require Premium. Per-question pages beyond 10 return 404.",
+  "scrapedAt": "2026-11-16T13:45:05+00:00",
+  "totalQuestions": 1,
+  "questions": [
+    {
+      "number": 6,
+      "id": 1320116056,
+      "type": "multiple_choice",
+      "question": "What is typically the result of oversaturation of system resources during performance testing?",
+      "choices": {
+        "A": "Response time will gradually improve over a period of time.",
+        "B": "Response time will be slow under significant load levels.",
+        "C": "Error logging will decrease.",
+        "D": "The size of the database will gradually decrease."
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Response time will be slow under significant load levels."
+      ],
+      "explanation": "Oversaturation of system resources occurs when the demand for a resource (e.g., CPU, memory, network bandwidth) exceeds its available capacity. According to fundamental principles of performance engineering and queuing theory, when a resource becomes saturated, incoming requests can no longer be processed immediately. They are forced to wait in a queue, leading to a significant and often non-linear increase in the time it takes to receive a response. This phenomenon is a primary focus of load and stress testing, where the goal is to identify the point at which performance degrades due to resource bottlenecks.",
+      "whyOthersAreIncorrect": "A. Response time will gradually improve over a period of time: This is incorrect. Resource saturation causes performance degradation, meaning response times increase (get slower), not improve.\nC. Error logging will decrease: This is incorrect. Resource oversaturation often leads to system failures like timeouts or crashes, which would cause error logging to increase.\nD. The size of the database will gradually decrease: This is incorrect. This is not a direct or typical consequence of resource saturation; high load is more likely to increase database size through transaction logging and data creation.",
+      "references": "1.  ISTQB® Certified Tester Performance Testing Syllabus v1.0.1 (2023)\n\nSection 2.3.1\n\n\"Performance Test Types.\" The syllabus describes stress testing as a method to \"evaluate how the system behaves when it is pushed beyond its specified limits.\" A key behavior observed under such conditions is performance degradation\n\nincluding increased response times.\n\n2.  Jain\n\nR. (1991). The Art of Computer Systems Performance Analysis: Techniques for Experimental Design\n\nMeasurement\n\nSimulation\n\nand Modeling. Wiley. Chapter 31\n\n\"Introduction to Queuing Theory\n\n\" explains that as the utilization of a server (a system resource) approaches 100% (saturation)\n\nthe queue length and waiting time for requests increase exponentially\n\ndirectly causing slower response times. This is a foundational academic principle in computer performance analysis.\n\n3.  University of Toronto\n\nECE1770: \"Performance Modeling of Computer Systems\" Course Notes. These and similar university course materials on system performance explain that a system's response time (R) is a function of its service time and waiting time. As resource utilization (ρ) approaches 1\n\nwaiting time increases dramatically\n\nthus increasing the overall response time. (e.g.\n\nR = S / (1 - ρ) for an M/M/1 queue).",
+      "url": "https://certempire.com/exam/ct-pt-exam-questions/question/6/",
+      "verdict": "confirmed by reviewer against syllabus 2018",
+      "verification": {
+        "method": "blind independent answer from the ISTQB CT-PT syllabus 2018, then compared with this file",
+        "independentAnswer": "B",
+        "independentConfidence": "high",
+        "status": "confirmed",
+        "confidence": "high"
+      },
+      "alsoAppearsIn": [
+        "P2PExams Q4"
+      ],
+      "chapter": "Basic Concepts",
+      "chapterAssignedBy": "reviewer (mapped to ISTQB CT-PT syllabus 2018 chapter)"
+    }
+  ],
+  "reviewNote": "Answers checked against the ISTQB CT-PT syllabus 2018. Q5 and Q7 corrected; original CertEmpire answers kept in sourceAnswer.",
+  "verificationSummary": {
+    "date": "2026-11-16",
+    "counts": {
+      "confirmed": 1
+    },
+    "legend": {
+      "confirmed": "independent syllabus-based answer matches",
+      "corrected": "source answer was wrong; fixed (original kept in sourceAnswer)",
+      "multiple-correct": "syllabus supports more than one option; all listed",
+      "flagged": "question is flawed/incomplete/disputed; answer kept, see note",
+      "corrected-earlier": "fixed in an earlier review and confirmed by this check"
+    }
+  },
+  "dedupNote": "Removed 9 question(s) that duplicate a question kept in a higher-priority file (official ISTQB > ASTQB > ExamCademy > Mock Exam Network > OpenExamPrep > unofficial sites > CertEmpire > P2PExams). Removed numbers: [1, 2, 3, 4, 5, 7, 8, 9, 10]."
+}
