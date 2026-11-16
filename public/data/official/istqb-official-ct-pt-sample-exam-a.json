@@ -1,0 +1,917 @@
+{
+  "site": "ISTQB (istqb.org) - official",
+  "exam": "ISTQB Performance Testing Specialist (CT-PT), Sample Exam set A v1.3 (syllabus 2018)",
+  "source": {
+    "questions": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CT-PT_Sample-Exam-A-Questions_v1.3-1.pdf",
+    "answers": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CT-PT_Sample-Exam-A-Answers_v1.3.pdf"
+  },
+  "copyright": "© International Software Testing Qualifications Board (ISTQB®). Official sample exam; non-commercial extracts permitted with source acknowledged.",
+  "scrapedAt": "2026-11-16T13:52:21+00:00",
+  "totalQuestions": 40,
+  "questions": [
+    {
+      "number": 1,
+      "learningObjective": "PTFL-1.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following is an important principle in performance testing?",
+      "choices": {
+        "A": "The tests should be easy to create and understand",
+        "B": "The test results must be reproducible when the system under test is unchanged",
+        "C": "The tests should be executed in the production environment to provide the most accurate results",
+        "D": "The test results should match the stakeholders' expectations for system performance"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The test results must be reproducible when the system under test is unchanged"
+      ],
+      "explanation": "a) Is not correct. Because tests are sometimes quite complex to create\n\nb) Is correct. Reproducible results are a key factor in performance test execution. The results should be statistically identical when run on the same unchanged system\n\nc) Is not correct. Because tests generally should not be run in the actual production environment, but rather a representative equivalent\n\nd) Is not correct. Because the test results may show that the system does not meet expectations.",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q4"
+      ]
+    },
+    {
+      "number": 2,
+      "learningObjective": "PTFL-1.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following is the best description of spike testing?",
+      "choices": {
+        "A": "It focuses on the ability of the system to handle loads that are gradually increased to reach the expected maximum",
+        "B": "It focuses on the ability of the system to handle loads that are at or beyond the expected peak load",
+        "C": "It focuses on the ability of the system to meet future efficiency requirements",
+        "D": "It focuses on the ability of the system to respond to quick and extreme changes in load"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "It focuses on the ability of the system to respond to quick and extreme changes in load"
+      ],
+      "explanation": "a) Is not correct. Is a description of load testing\n\nb) Is not correct. Is a description of stress testing\n\nc) Is not correct. Is a description of scalability testing\n\nd) Is correct. This is a description of spike testing",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q31"
+      ]
+    },
+    {
+      "number": 3,
+      "learningObjective": "PTFL-1.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following is the best description of load testing?",
+      "choices": {
+        "A": "It focuses on the ability of the system to handle loads that are gradually increased to reach the expected maximum",
+        "B": "It focuses on the ability of the system to handle loads that are at or beyond the expected peak load",
+        "C": "It focuses on the ability of the system to meet future efficiency requirements",
+        "D": "It focuses on the ability of the system to respond to quick and extreme changes in load"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "It focuses on the ability of the system to handle loads that are gradually increased to reach the expected maximum"
+      ],
+      "explanation": "a) Is correct. This is a description of load testing\n\nb) Is not correct. Is a description of stress testing\n\nc) Is not correct. Is a description of scalability testing\n\nd) Is not correct. Is a description of spike testing"
+    },
+    {
+      "number": 4,
+      "learningObjective": "PTFL-1.3.1",
+      "kLevel": "K1",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following performance testing activities should occur during unit testing?",
+      "choices": {
+        "A": "Testing end-to-end behavior under various load conditions",
+        "B": "Testing data flows and workflows across interfaces",
+        "C": "Testing key use cases and workflows using a top-down approach",
+        "D": "Testing to evaluate resource utilization and potential bottlenecks"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Testing to evaluate resource utilization and potential bottlenecks"
+      ],
+      "explanation": "a) Is not correct. Because this occurs at system or SIT\n\nb) Is not correct. Because this occurs during SIT\n\nc) Is not correct. Because this is done during integration testing\n\nd) Is correct. While this can occur at any time, it should start with unit testing"
+    },
+    {
+      "number": 5,
+      "learningObjective": "PTFL-1.4.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "When is it appropriate to generate load via the application's APIs?",
+      "choices": {
+        "A": "When a large number of testers are available who can represent the real users",
+        "B": "When testing must be conducted at the communications protocol level",
+        "C": "When the UI is likely to change but the transactions must be processed as if they were created through the UI",
+        "D": "When only small numbers of test instances are available"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "When the UI is likely to change but the transactions must be processed as if they were created through the UI"
+      ],
+      "explanation": "a) Is not correct. Because this is crowd testing, and these testers would be using the real UI\n\nb) Is not correct. Because the communications protocol level is one level below the API level\n\nc) Is correct. Testing through the API makes the most sense when the UI is likely to change, but the full communication to and from the UI must be tested\n\nd) Is not correct. Because many test instances can be created with API testing"
+    },
+    {
+      "number": 6,
+      "learningObjective": "PTFL-1.5.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "If you have an application that has a memory leak, what is the likely result you will see during performance testing?",
+      "choices": {
+        "A": "Response time will be consistently slow",
+        "B": "Response time will remain acceptable, but the error handling will degrade",
+        "C": "Response time will be slow, but only under heavy loads",
+        "D": "Response time will degrade over time"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Response time will degrade over time"
+      ],
+      "explanation": "a) Is not correct. Is an indication of underlying performance issues such as bad design, under-powered hardware, network latency, etc.\n\nb) Is not correct. Is an indication of resource pool or queue or stack issues as well as invalid timeout settings\n\nc) Is not correct. Is an indication that some of the resources may become saturated, but only at high loads\n\nd) Is correct. With a memory leak, response time will degrade over time (the time length is unknown though until you test it)",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q10"
+      ]
+    },
+    {
+      "number": 7,
+      "learningObjective": "PTFL-2.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following is a true statement regarding tracking metrics for network latency during a performance test?",
+      "choices": {
+        "A": "High latency could indicate a network bandwidth problem that could negatively impact performance",
+        "B": "Low latency could indicate a network bandwidth problem that could negatively impact performance",
+        "C": "Network latency is difficult to track and should not be included in the performance metrics",
+        "D": "Network latency is too variable to be useful during performance tuning"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "High latency could indicate a network bandwidth problem that could negatively impact performance"
+      ],
+      "explanation": "a) Is correct. A high latency means that there are delays occurring in the network which may be due to inadequate bandwidth\n\nb) Is not correct. Because low latency is a good thing\n\nc) Is not correct. Because this is trackable with the right tools\n\nd) Is not correct. Because if there is variability, that needs to be understood as part of the performance tests"
+    },
+    {
+      "number": 8,
+      "learningObjective": "PTFL-2.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Should performance test results be aggregated?",
+      "choices": {
+        "A": "Yes, this gives a better overall picture of the performance of the system and helps to identify trends",
+        "B": "Yes, this is the best way to focus on the outliers in the performance metrics",
+        "C": "No, the results should be analyzed individually so that all variations are understood",
+        "D": "No, the results from each test should be reported and tracked separately"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Yes, this gives a better overall picture of the performance of the system and helps to identify trends"
+      ],
+      "explanation": "a) Is correct. Aggregated results help to provide the big picture and to observe consistent trends. Aggregating the results helps to identify and understand the importance of outliers and to know which ones interesting vs are just test aberrations\n\nb) Is not correct. Because aggregated results will eliminate the information on the outliers\n\nc) Is not correct. Because aggregation allows you to see the big picture rather than focusing on the individual results which may be due to transient system noise. It is unlikely to ever reach the point where \"all\" variations are understood\n\nd) Is not correct. Because this type of reporting will be too difficult for stakeholders to understand and may focus on the highly unlikely situations"
+    },
+    {
+      "number": 9,
+      "learningObjective": "PTFL-2.3.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "In what way are log analysis tools helpful for collecting metrics?",
+      "choices": {
+        "A": "They monitor the systems while the performance tests are conducted and report on the behavior during the tests",
+        "B": "They create the system load and monitor the system performance",
+        "C": "They scan the various server logs and compile metrics for occurrences that were recorded during the test execution",
+        "D": "They write the performance results to the server logs for later manual analysis"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "They scan the various server logs and compile metrics for occurrences that were recorded during the test execution"
+      ],
+      "explanation": "a) Is not correct. As these are general system monitoring tools\n\nb) Is not correct. As these are performance testing tools\n\nc) Is correct. The log analysis tools scan the server logs for particular error types (high usage, memory errors, etc.) and report on those\n\nd) Is not correct. Because the performance test results are not written to the logs, rather the system activities during the performance tests are written to the logs"
+    },
+    {
+      "number": 10,
+      "learningObjective": "PTFL-2.4.1",
+      "kLevel": "K1",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Which of the following is a failure that would typically be found by conducting a spike test?",
+      "choices": {
+        "A": "The system performance gradually degrades",
+        "B": "The system provides inconsistent responses to errors",
+        "C": "The system handles a sudden burst of activity, but cannot resume a steady state",
+        "D": "The system performs well for the expected load, but cannot scale to a larger load"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The system handles a sudden burst of activity, but cannot resume a steady state"
+      ],
+      "explanation": "a) Is not correct. As this is a result of an endurance test\n\nb) Is not correct. Because this is an example of resource degradation over time\n\nc) Is correct. This is a description of a failure that has resulted from a spike test.\n\nd) Is not correct. Because this is the result of a scalability test"
+    },
+    {
+      "number": 11,
+      "learningObjective": "PTFL-3.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "When applying the principal performance testing activities, when should risk identification and analysis occur?",
+      "choices": {
+        "A": "Test planning",
+        "B": "Test analysis and design",
+        "C": "Test implementation and execution",
+        "D": "Test closure"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Test planning"
+      ],
+      "explanation": "a) Is correct. Risk identification and analysis is done at the test planning stage. This information is then used for the analysis and design of the tests\n\nb) Is not correct. Because this is too late in the process\n\nc) Is not correct. Because this is too late in the process\n\nd) Is not correct. Because this is too late in the process",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q5"
+      ]
+    },
+    {
+      "number": 12,
+      "learningObjective": "PTFL-3.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "When applying the principal performance testing activities, when should the test cases be ordered into performance test procedures?",
+      "choices": {
+        "A": "Test planning",
+        "B": "Test analysis and design",
+        "C": "Test implementation and execution",
+        "D": "Test closure"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Test implementation and execution"
+      ],
+      "explanation": "a) Is not correct. Because this is when the test cases are planned and designed\n\nb) Is not correct. Because this is when the test cases are planned and designed\n\nc) Is correct. This should occur during the test implementation and execution activities\n\nd) Is not correct. Because this is too late",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q2"
+      ]
+    },
+    {
+      "number": 13,
+      "learningObjective": "PTFL-3.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Consider the following technical environments:\n1. Single computer\n2. Multi-tier system\n3. Distributed\n4. Virtualized\n5. Dynamic/Cloud-based\n6. Client/Server and Browser-based\n7. Mobile\n8. Embedded\n9. Mainframe\nWhich of these is most likely to have a performance risk due to connectivity issues?",
+      "choices": {
+        "A": "2, 3",
+        "B": "7, 8",
+        "C": "5, 6, 7, 9",
+        "D": "2, 4, 5, 8"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "7, 8"
+      ],
+      "explanation": "a) Is not correct. Because these environments are not prone to connection dropping\n\nb) B is correct according to the syllabus. Mobile and embedded environments are particularly prone to connectivity issues particularly when embedded software is used in the IoT devices\n\nc) Is not correct. Because other than #7, the other environments are not prone to connection dropping\n\nd) Is not correct. Because these environments are not prone to connection dropping"
+    },
+    {
+      "number": 14,
+      "learningObjective": "PTFL-3.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "Consider the following technical environments:\n1. Virtualized\n2. Dynamic/Cloud-based\n3. Client/Server and Browser-based\n4. Mobile\n5. Embedded\n6. Mainframe\nWhich of these is most likely to have a performance risk due to memory leaks?",
+      "choices": {
+        "A": "1, 2, 3, 6",
+        "B": "2, 3, 4, 5",
+        "C": "1, 2, 4, 6",
+        "D": "1, 3, 4, 5"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "1, 3, 4, 5"
+      ],
+      "explanation": "a) Is not correct\n\nb) Is not correct\n\nc) Is not correct\n\nd) Is correct. The virtualized environment uses shared resources across different applications, including memory. The dynamic/cloud-based environment are designed to dynamically scale, so while memory leaks may occur, they are less of a risk because the environment will scale to compensate. Client/Server and browser-based environments are prone to memory leaks, particularly since a lot of this code is written in C and C++. Mobile environments are prone to leakage and are particularly at risk due to the limited available memory. The same is true of the embedded environments (and these also tend to be written in languages that have less protection against leaks). Mainframes tend to run older code, often written in the higher-level languages that provide their own memory management"
+    },
+    {
+      "number": 15,
+      "learningObjective": "PTFL-3.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "If performance testing is being conducted for software that is written in C++, what do you need to monitor that would not be a concern if the software were written in Python?",
+      "choices": {
+        "A": "Memory use",
+        "B": "Network latency",
+        "C": "Connectivity",
+        "D": "Batch processing"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Memory use"
+      ],
+      "explanation": "a) Is correct. C and C++ require the programmer to do their own memory management which sometimes results in memory leaks (where memory is allocated, but not de-allocated)\n\nb) Is not correct. Would have the same issues regardless of the language used\n\nc) Is not correct. Would have the same issues regardless of the language used\n\nd) Is not correct. Would have the same issues regardless of the language used"
+    },
+    {
+      "number": 16,
+      "learningObjective": "PTFL-3.3.1",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. Given this information, when is the best time in the project to analyze and assess the performance risks?",
+      "choices": {
+        "A": "During the requirements phase and again just prior to executing the performance tests",
+        "B": "After design but prior to coding",
+        "C": "During system testing and again prior to the performance tests",
+        "D": "Repeatedly throughout the requirements, development, and performance testing"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Repeatedly throughout the requirements, development, and performance testing"
+      ],
+      "explanation": "a) Is not correct. Because it ignores looking at the risks during development\n\nb) Is not correct. Because it leaves out the requirements and development and at the completion of development\n\nc) Is not correct. Because it leaves out the requirements and development options for analysis\n\nd) Is correct. Since performance is critical, the risks must be analyzed as early as possible and then repeatedly as the system is assembled since risks may change both in impact and likelihood"
+    },
+    {
+      "number": 17,
+      "learningObjective": "PTFL-3.4.1",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. What is the best way to address the performance testing for the response time?",
+      "choices": {
+        "A": "Test from the UI with the full data set loaded to ensure the response time will be adequate when the database is loaded",
+        "B": "Test via the web services at the API level to ensure access to the data is fast enough without having the testing complicated by the UI",
+        "C": "Conduct a technical review of the database implementation and conduct a performance test from the UI with the full database loaded",
+        "D": "Conduct a network assessment to ensure there are no latency issues between the database server and the web servers, then test with a network scanner to ensure no collisions are occurring that might cause performance delays"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Conduct a technical review of the database implementation and conduct a performance test from the UI with the full database loaded"
+      ],
+      "explanation": "a) Is not correct. Because this leaves out the static testing\n\nb) Is not correct. Because this would bypass any issues that might occur at the UI end and does not consider the database loading\n\nc) Is correct. The best way to do the testing is to first do a technical analysis because this can be done at the design time. Once implemented, full testing will be needed to verify that the solution does indeed deliver the required performance\n\nd) Is not correct. Because the network is less likely an issue regarding the data handling for such a large amount of data"
+    },
+    {
+      "number": 18,
+      "learningObjective": "PTFL-4.1.1",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. Which of the following is a technical objective for performance that could be applicable to this project?",
+      "choices": {
+        "A": "The response time must be within three seconds from the time the request is sent when there are 100 concurrent users making similar requests",
+        "B": "The system must be able to scale to 10 million patient records with no degradation in the performance",
+        "C": "The system must perform at or above the level of the legacy system when handling a similar load and responding to a similar request",
+        "D": "The response time must remain the same when the disaster recovery system is in use rather than the primary system and the switchover must cause no discernable downtime"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The system must be able to scale to 10 million patient records with no degradation in the performance"
+      ],
+      "explanation": "a) Is not correct. Because this is a user-based objective\n\nb) Is correct. Scalability is a technical objective for performance\n\nc) Is not correct. Because this is also a user-based objective and not a very clear one at that\n\nd) Is not correct. Because this is primarily a robustness test rather than a performance test"
+    },
+    {
+      "number": 19,
+      "learningObjective": "PTFL-4.1.2",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. You have been asked to write a performance test plan for this project. Which of the following is the information you will need to deal with the most critical performance objective?",
+      "choices": {
+        "A": "Who can access what data and how often will they do it",
+        "B": "How is user access authenticated and authorized",
+        "C": "Where will the data be stored and how much storage is available",
+        "D": "What is the expected use of the data after it has been presented to the user"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Who can access what data and how often will they do it"
+      ],
+      "explanation": "a) Is correct. Because data retrieval time is critical to the project, you need to know who can access that data (so you can get the user profiles created), what data they will access (so you can be sure you have the right data available) and how often will they access it (so you can set up an operational profile)\n\nb) Is not correct. Because this is more related to security than performance testing and is not the most critical performance objective\n\nc) Is not correct. Because the data storage may be something to investigate if the data retrieval proves slow, but we do not need to know it to conduct the tests\n\nd) Is not correct. Because that is after retrieval and the scenario just discusses presenting the information to the requestor"
+    },
+    {
+      "number": 20,
+      "learningObjective": "PTFL-4.1.3",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. You have been asked to prepare a presentation for the business stakeholders regarding your plan for performance testing. Which of the following is an example set of information that should be shared with these stakeholders?",
+      "choices": {
+        "A": "Once configured, the performance test system will require data loading. Once loaded, we will next proceed to running a small set of sample scripts to verify the output. When those succeed, we will proceed with the performance test script which ramps up users at a rate of 10 per minute until we reach the target number of concurrent users. This load will then be maintained for 2 hours",
+        "B": "The performance test system will cost $240,000 which will include the hardware and setup. This system will allow us to create a test system that is representative of the production system and will allow us to simulate production-like conditions",
+        "C": "Because the cost of a performance test system is prohibitive, we will conduct the performance testing in the production environment using live data",
+        "D": "The product risks include data contention issues, data access issues, locking issues that will reject concurrent requests, network bandwidth constraints, data seek errors, data seek slowdowns or bottlenecks, and difficulty for the user in processing the returned data"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The performance test system will cost $240,000 which will include the hardware and setup. This system will allow us to create a test system that is representative of the production system and will allow us to simulate production-like conditions"
+      ],
+      "explanation": "a) Is not correct. Because this is information that should be shared with the technical stakeholders\n\nb) Is correct. This is information that should be conveyed to the business stakeholders\n\nc) Is not correct. Because it is incomplete. If testing will be conducted in production, mitigation plans must also be made so that any impact to production is understood\n\nd) Is not correct. Because this is a list of risks but does not include a list of how the tests will help mitigate these risks"
+    },
+    {
+      "number": 21,
+      "learningObjective": "PTFL-4.1.3",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. You have been asked to prepare a presentation for the technical stakeholders regarding your plan for performance testing. Which of the following is an example set of information that should be shared with these stakeholders?",
+      "choices": {
+        "A": "Once configured, the performance test system will require data loading. Once loaded, we will next proceed to running a small set of sample scripts to verify the output. When those succeed, we will proceed with the performance test script which ramps up users at a rate of 10 per minute until we reach the target number of concurrent users. This load will then be maintained for 2 hours",
+        "B": "The performance test system will cost $240,000 which will include the hardware and setup. This system will allow us to create a test system that is representative of the production system and will allow us to simulate production-like conditions",
+        "C": "Because the cost of a performance test system is prohibitive, we will conduct the performance testing in the production environment using live data",
+        "D": "The product risks include data contention issues, data access issues, locking issues that will reject concurrent requests, network bandwidth constraints, data seek errors, data seek slowdowns or bottlenecks, and difficulty for the user in processing the returned data"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Once configured, the performance test system will require data loading. Once loaded, we will next proceed to running a small set of sample scripts to verify the output. When those succeed, we will proceed with the performance test script which ramps up users at a rate of 10 per minute until we reach the target number of concurrent users. This load will then be maintained for 2 hours"
+      ],
+      "explanation": "a) Is correct. This is information that should be conveyed to the technical stakeholders because it shows how the tests will be conducted\n\nb) Is not correct. Because this is information that should be shared with the business stakeholders\n\nc) Is not correct. Because it is incomplete. If testing will be conducted in production, mitigation plans must also be made so that any impact to production is understood\n\nd) Is not correct. Because this is a list of risks but does not include a list of how the tests will help mitigate these risks"
+    },
+    {
+      "number": 22,
+      "learningObjective": "PTFL-4.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "If your performance test is testing the speed of the response of a web service, which protocol is being used?",
+      "choices": {
+        "A": "ODBC",
+        "B": "HTTP",
+        "C": "REST",
+        "D": "SMTP"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "REST"
+      ],
+      "explanation": "a) Is not correct. Is an example of a database protocol\n\nb) Is not correct. Is an example of a web protocol\n\nc) Is correct. Is an example of a web service protocol\n\nd) Is not correct. Is an example of a network protocol",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q6"
+      ]
+    },
+    {
+      "number": 23,
+      "learningObjective": "PTFL-4.2.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "If your performance test is testing the speed with which database requests are sent and received, which protocol is being used?",
+      "choices": {
+        "A": "ODBC",
+        "B": "HTTP",
+        "C": "REST",
+        "D": "SMTP"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "ODBC"
+      ],
+      "explanation": "a) Is correct. This is an example of a database protocol\n\nb) Is not correct. Is an example of a web protocol\n\nc) Is not correct. Is an example of a web service protocol\n\nd) Is not correct. Is an example of a network protocol"
+    },
+    {
+      "number": 24,
+      "learningObjective": "PTFL-4.2.2",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "If you are testing from the UI and you need to simulate the amount of time it will take a real user to read a prompt and enter data in a field, what should you implement in your test script?",
+      "choices": {
+        "A": "Wait time",
+        "B": "Think time",
+        "C": "Latency time",
+        "D": "Reading time"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Think time"
+      ],
+      "explanation": "a) Is not correct\n\nb) Is correct. This is referred to as think time\n\nc) Is not correct\n\nd) Is not correct"
+    },
+    {
+      "number": 25,
+      "learningObjective": "PTFL-4.2.2",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is the value of nesting transactions for performance testing?",
+      "choices": {
+        "A": "It supports the concept of parent and child transactions",
+        "B": "It allows the tester to measure a series of discrete transactions",
+        "C": "It speeds the reporting time for the performance results",
+        "D": "It bypasses the network communication time by sending the transaction directly to the server that will process it"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "It allows the tester to measure a series of discrete transactions"
+      ],
+      "explanation": "a) Is not correct. Because parent and child transactions may not accomplish anything meaningful in terms of system usage\n\nb) Is correct. The discrete transactions can be nested together to provide response information for a series of transactions that would normally be performed together while still allowing measurement of the discrete transactions as well\n\nc) Is not correct. Because it will not affect the reporting time, particularly if the discrete transactions are tracked as well. It may increase reporting time\n\nd) Is not correct. Because this has nothing to do with bypassing network communications"
+    },
+    {
+      "number": 26,
+      "learningObjective": "PTFL-4.2.3",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. One of the operational profiles you have identified is an emergency room doctor. You have determined that this person will access the system 10 times per shift (a shift is 10 hours) and that they will normally view 6 patient records for each access. They will print those patient records to be retained in the patient's file at the hospital. They will also enter notes into the database regarding the patient's treatment. For new patients, another user will enter the information into the system. Given this information, what is missing to construct the operational profile for this user class?",
+      "choices": {
+        "A": "No interviews were conducted to better understand the user class",
+        "B": "The number of users across the system for this role is not known",
+        "C": "Batch processing of the patient upload information has not been considered",
+        "D": "Other system components that may be required (x-ray upload, lab results reporting) have not been considered"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The number of users across the system for this role is not known"
+      ],
+      "explanation": "a) Is not correct. Is not needed for this instance because we already have the information\n\nb) Is correct. At this point, we need to know how many users of this type will be accessing the system. We know the concurrency because we can take the number of users and the accesses per shift to figure this out\n\nc) Is not correct. Considerations for setting up the load profile but not needed for the operational profile\n\nd) Is not correct. Considerations for setting up the load profile but not needed for the operational profile"
+    },
+    {
+      "number": 27,
+      "learningObjective": "PTFL-4.2.4",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. One of the operational profiles you have identified is an emergency room doctor. You have determined that this person will access the system 10 times per shift (a shift is 10 hours) and that they will normally update 6 patient records for each access by entering notes into the database regarding the patient's treatment. They will print those patient records to be retained in the patient's file at the hospital. For new patients, another user will enter the information into the system. The shifts these doctors work is: 7am - 5pm (day shift), 2pm - midnight (evening shift), 9pm to 7am (night shift). There are 1000 doctors that work the day shift, 1000 that work the evening shift, and 500 that work the night shift. Assuming an even distribution of the system access across a shift, which of the following is the proper load profile for these doctors?",
+      "choices": {
+        "A": "6250 transaction per hour",
+        "B": "Steady ramp-up increasing the transactions by 15,000 per hour starting at 15,000 transactions and ending at 150,000 transactions",
+        "C": "Stepped ramp-up with 7 hours at 21,000 transactions, 3 hours at 27,000 transactions, 3 hours at 36,000 transactions, 11 hours at 66,000 transactions",
+        "D": "Separate tests for 120,000 transactions per hour and 30,000 transactions per hour"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Stepped ramp-up with 7 hours at 21,000 transactions, 3 hours at 27,000 transactions, 3 hours at 36,000 transactions, 11 hours at 66,000 transactions"
+      ],
+      "explanation": "Total transactions should be 2500 doctors x 10 accesses x 6 record\nupdates: 150,000 transactions per day. Hourly load:\n7 hours of 500 doctors = 21,000 transactions\n11 hours of 1000 doctors = 66,000 transactions\n3 hours of 1500 doctors = 27,000 transactions\n3 hours of 2000 doctors = 36,000 transactions\nDoctors per hour in 24-hour clock:\n1:00 - 500\n2:00 - 500\n3:00 - 500\n4:00 - 500\n5:00 - 500\n6:00 - 500\n7:00 - 1000\n8:00 - 1000\n9:00 - 1000\n10:00 - 1000\n11:00 - 1000\n12:00 - 1000\n13:00 - 1000\n14:00 - 2000\n15:00 - 2000\n16:00 - 2000\n17:00 - 1000\n18:00 - 1000\n19:00 - 1000\n20:00 - 1000\n21:00 - 1500\n22:00 - 1500\n23:00 - 1500\n24:00 - 500"
+    },
+    {
+      "number": 28,
+      "learningObjective": "PTFL-4.2.5",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. One of the operational profiles you have identified is an emergency room doctor. You have determined that this person will access the system 10 times per shift (a shift is 10 hours) and that they will normally update 6 patient records for each access by entering notes into the database regarding the patient's treatment. They will print those patient records to be retained in the patient file at the hospital. For new patients, another user will enter the information into the system. The shifts these doctors work is: 7am - 5pm (day shift), 2pm - midnight (evening shift), 9pm to 7am (night shift). There are 1000 doctors that work the day shift, 1000 that work the evening shift, and 500 that work the night shift. Assuming an even distribution of the system access across a shift, what is the highest number of concurrent accesses on the system from these doctors?",
+      "choices": {
+        "A": "1,000",
+        "B": "2,000",
+        "C": "6,000",
+        "D": "12,000"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "2,000"
+      ],
+      "explanation": "a) Is not correct\n\nb) Is correct. The highest concurrent usage is when 2000 doctors are working from 2:00-5:00 in the afternoon. Each doctor has only one access per hour according to the question and that access has up to 6 updates\n\nc) Is not correct\n\nd) Is not correct"
+    },
+    {
+      "number": 29,
+      "learningObjective": "PTFL-4.2.6",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is one of the advantages to conducting performance tests at the protocol level?",
+      "choices": {
+        "A": "It is the easiest method for manual scripting",
+        "B": "It is the best way to evaluate the total user experience",
+        "C": "It is scalable because the client is bypassed",
+        "D": "It is the best way to handle data correlation"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "It is scalable because the client is bypassed"
+      ],
+      "explanation": "a) Is not correct. Because this scripting can be quite difficult without using a tool to capture the protocol level communication\n\nb) Is not correct. Because the UI is bypassed\n\nc) Is correct. This is a scalable method because it bypasses the UI so you can run many of these tests at the same time without requiring the client\n\nd) Is not correct. Because data correlation is more difficult because the correlation done at the UI is bypassed"
+    },
+    {
+      "number": 30,
+      "learningObjective": "PTFL-4.2.6",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is the best method to use for verifying that a performance test script added users to a system?",
+      "choices": {
+        "A": "Check the error output from the script to verify no errors occurred",
+        "B": "Manually check via an application to see if the users were created",
+        "C": "Use the script to verify through the application that the users were created",
+        "D": "Use the script to verify that the users exist in the database"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Use the script to verify that the users exist in the database"
+      ],
+      "explanation": "a) Is not correct. Because no errors do not mean that it worked - it could just mean that the error handling is also broken\n\nb) Is not correct. Because this could be a very time-consuming approach\n\nc) Is not correct. Because the application may have a defect that causes it to not find the new users\n\nd) Is correct. Scripts should contain their own checks that the process has worked and verifying via the database directly is a more efficient way to do it (and more maintainable) than having the script do the verification through the application (which may also be wrong) as this adds to the maintenance requirements of the script"
+    },
+    {
+      "number": 31,
+      "learningObjective": "PTFL-4.2.7",
+      "kLevel": "K3",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. One of the operational profiles you have identified is an emergency room doctor. You have determined that this person will access the system 10 times per shift (a shift is 10 hours) and that they will normally view 6 patient records for each access. They will print those patient records to be retained in the patient file at the hospital. They will also enter notes into the database regarding the patient's treatment. For new patients, another user will enter the information into the system. You have created a performance script that logs in as a doctor (from a list of doctors) and then performs the patient look ups. When you run the script, the login works, but then you are not able to perform the patient look ups. You are getting an error that indicates the user is not known to the system. What is likely your problem?",
+      "choices": {
+        "A": "The script is not capturing and re-using the system identifier for the user",
+        "B": "You cannot use the same user to log in and do the patient look ups because the user has expired",
+        "C": "The script needs to pass the login username/password for each transaction",
+        "D": "The login information from the previous user is cached by the system and you need to clear the cache before you can log in as a new user"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "The script is not capturing and re-using the system identifier for the user"
+      ],
+      "explanation": "a) Is correct. The problem is most likely with the system identifier that is given to that particular user when they login. When they try to do another transaction, that unique identifier needs to be passed to the system so it can provide access to the transaction\n\nb) Is not correct. Because there is no indication that this is the problem\n\nc) Is not correct. Because the question indicates that the doctor performs multiple lookups per access\n\nd) Is not correct. Because if this were happening, it would log in as the previous user, not error out on the login"
+    },
+    {
+      "number": 32,
+      "learningObjective": "PTFL-4.2.7",
+      "kLevel": "K3",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are testing a sales application for an e-commerce system. You are particularly interested in the response time for when a user enters text to be used to search for an item in the database. You have noticed that the first time you ran the tests it took 5.00 seconds to respond, but subsequent queries with the same data are responding in 0.01 seconds. What should you have done during your scripting to prevent this issue?",
+      "choices": {
+        "A": "There is no issue, the system is just getting faster",
+        "B": "You need to log in each time to ensure that the transaction is performed again",
+        "C": "You need to be sure the cache is cleared because the query results are probably being cached",
+        "D": "You need to use a different user for each test to avoid the user's information being re-used without being restored"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "You need to be sure the cache is cleared because the query results are probably being cached"
+      ],
+      "explanation": "a) Is not correct. Is highly unlikely as systems tend to get slower, not faster, unless there is a caching issue\n\nb) Is not correct. Because it is not the user's information that is being re- used but rather the search results\n\nc) Is correct. This is a symptom of caching and can be avoided by either varying the data or by clearing the cache\n\nd) Is not correct. Because it is not the user's information that is being re- used but rather the search results"
+    },
+    {
+      "number": 33,
+      "learningObjective": "PTFL-4.2.8",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What happens when the performance test system is not equivalent to the production environment?",
+      "choices": {
+        "A": "Projections become less reliable, and risk increases because the results may not be representative",
+        "B": "The tests will tend to run more quickly because they are not burdened by production data",
+        "C": "The results will be easier to understand because the system can be configured for a particular test",
+        "D": "Projects become more reliable because of the targeted focus, and this results in risk being reduced"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Projections become less reliable, and risk increases because the results may not be representative"
+      ],
+      "explanation": "a) Is correct. The less like production the performance testing system is, the less reliable are the results and this increases the risk of making incorrect assumptions\n\nb) Is not correct. It could happen, but not necessarily\n\nc) Is not correct. Because there is no reason to think the results would be easier to understand with a different configuration\n\nd) Is not correct. Because the project risk would actually be increased in this case"
+    },
+    {
+      "number": 34,
+      "learningObjective": "PTFL-4.2.8",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is a concern when using a properly configured load generation tool to build the background load for the performance tests?",
+      "choices": {
+        "A": "The load generated will contain invalid data",
+        "B": "The load generator may experience performance problems and will not be able to maintain a steady load",
+        "C": "The load generated may affect the production system and the production data",
+        "D": "The load generator log reports may be difficult to read, resulting in problems with interpreting the performance results"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The load generator may experience performance problems and will not be able to maintain a steady load"
+      ],
+      "explanation": "a) Is not correct. Will not occur if the tool is configured properly\n\nb) Is correct. A load generator, particularly if you are running multiples on one machine, may slow down enough that it is no longer maintaining the desired load on the system\n\nc) Is not correct. Will not occur if the tool is configured properly\n\nd) Is not correct. Is not an issue as the load generator is not usually used to generate the performance results - it just creates the load on the system so the performance tests can be conducted"
+    },
+    {
+      "number": 35,
+      "learningObjective": "PTFL-4.3.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is the purpose of having a ramp up period at the beginning of performance tests?",
+      "choices": {
+        "A": "To increase the number of users beyond the desired load",
+        "B": "To allow the system to achieve a steady state before taking measurements",
+        "C": "To allow the system to achieve an orderly shut down after the tests",
+        "D": "To ensure the performance monitoring tools are working"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "To allow the system to achieve a steady state before taking measurements"
+      ],
+      "explanation": "a) Is not correct. Because the goal of the ramp up to is to get the number of users to the point desired for the test, not to exceed that number\n\nb) Is correct. The system must have started up and achieved a steady state for valid steady state performance metrics to be gathered\n\nc) Is not correct. Because ramp up is increasing load, not decreasing it getting ready for shut down\n\nd) Is not correct. Because this has nothing to do with ramp up and should be tested before any official tests are started"
+    },
+    {
+      "number": 36,
+      "learningObjective": "PTFL-4.3.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is a method for testing transient states?",
+      "choices": {
+        "A": "Steady load testing",
+        "B": "Peak and valley testing",
+        "C": "Spike testing",
+        "D": "Scalability testing"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Spike testing"
+      ],
+      "explanation": "a) Is not correct\n\nb) Is not correct\n\nc) Is correct. This is achieved with spike tests which force the system to transition between a low load to a high load in a short period of time\n\nd) Is not correct",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q8"
+      ]
+    },
+    {
+      "number": 37,
+      "learningObjective": "PTFL-4.4.1",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. You have conducted your tests and have determined the following metrics:\n< 3 second response time: 85% of the time\n< 5 second response time: 90% of the time\n<10 second response time: 95% of the time\n< 60 second response time: 100% of the time\nGiven this information, how should you present the results to the stakeholders?",
+      "choices": {
+        "A": "The test failed; the system is too slow. The requirements should be reviewed to ensure that <3 seconds is required 100% of the time",
+        "B": "85% of the time the performance goal is met, so the system should be accepted based on industry standards",
+        "C": "The response time for 90% of the tests is probably acceptable, but more tuning is needed to bring down the 95% response time",
+        "D": "The response time for 100% of the tests is unacceptable and tuning will be required to bring it down to <3 seconds"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The response time for 90% of the tests is probably acceptable, but more tuning is needed to bring down the 95% response time"
+      ],
+      "explanation": "a) Is not correct. This is also a problem with the requirements being unclear. Does it have to be less than 3 seconds 100% of the time? Or is it acceptable if it is 95%? As stated though, the system has failed the test and the requirements should be revisited.\n\nb) Is not correct. Because the goal did not stay 85% of the time was acceptable\n\nc) Is correct. Might be a good result if the requirements had been better defined. Right now, they say that 100% must be less than 3 seconds. Realistically though, the 90% time should be investigated to see if there are a few outliers that are bringing it down or if it is always at the 5 second mark. More tuning should be attempted though because this is a critical system and performance could be life or death impacting\n\nd) Is not correct. Because tuning to get to below 3 seconds 100% of the time will probably not be possible"
+    },
+    {
+      "number": 38,
+      "learningObjective": "PTFL-5.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is the purpose of a load generator tool?",
+      "choices": {
+        "A": "It creates a load on the network to allow testing for collisions",
+        "B": "It maintains a load on the user interface to accurately mimic user response time",
+        "C": "It feeds data to the dashboard showing how the system is responding to the load",
+        "D": "It simulates user behavior according to the operational profiles"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "It simulates user behavior according to the operational profiles"
+      ],
+      "explanation": "a) Is not correct. Is a network analysis tool\n\nb) Is not correct. Might be a browser testing tool or might not exist\n\nc) Is not correct. Is a monitoring too\n\nd) Is correct. This is what a load generator tool does",
+      "alsoAppearsIn": [
+        "Unofficial sites file Q3"
+      ]
+    },
+    {
+      "number": 39,
+      "learningObjective": "PTFL-5.1.1",
+      "kLevel": "K2",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "What is a pay-as-you-go tool?",
+      "choices": {
+        "A": "A tool with a licensing agreement that requires you to pay only for the number of virtual users and instances that you actually use",
+        "B": "A server-based tool that provides you with full ownership of the tool for your usage",
+        "C": "A monitoring tool that populates the dashboard with pertinent metrics based on what you have paid to monitor",
+        "D": "A tool that provides the ability to test from multiple points of presence for load generation"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "A tool with a licensing agreement that requires you to pay only for the number of virtual users and instances that you actually use"
+      ],
+      "explanation": "a) Is correct. This is the description of a pay-as-you-go tool. These are often cloud-based tools but not all cloud-based tools are pay-as-you-go\n\nb) Is not correct. As these are not descriptions of pay-as-you-go tools\n\nc) Is not correct. As these are not descriptions of pay-as-you-go tools\n\nd) Is not correct. As these are not descriptions of pay-as-you-go tools"
+    },
+    {
+      "number": 40,
+      "learningObjective": "PTFL-5.2.1",
+      "kLevel": "K4",
+      "points": 1,
+      "select": "ONE",
+      "type": "multiple_choice",
+      "question": "You are working on a project that tracks health history information for patients across a region. The number of records handled by the system is in the millions due to the large number of patients in the region. Patient information must be accessible to doctors in offices, hospitals, and urgent care facilities. The information should be presented to the requestor within three seconds of request, particularly for patients with critical allergies and preconditions. You have a technical team conducting the performance tests and they are comfortable with programming the performance test scripts for re-usability and maintainability. You are now looking for a tool to use for this testing. You have found one that is compatible with your environment and will be able to generate a load via the protocols in use. The team has looked at it and they are comfortable that they can code in the tool and will be able to create their scripts with little training. Because there are many stakeholders for this testing, you have verified that the tool provides excellent monitoring and reporting capabilities. You have verified with the various system administrators that they are comfortable with the tool and happy to use its monitoring capabilities in addition to their own tools during the testing. What do you still need to verify before selecting this tool?",
+      "choices": {
+        "A": "The project schedules",
+        "B": "The availability of a record/playback capability for your testers to use",
+        "C": "The ability of the tool to meet your requirements for concurrent virtual users",
+        "D": "The ease with which your team can code the required performance scripts"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The ability of the tool to meet your requirements for concurrent virtual users"
+      ],
+      "explanation": "a) Is not correct\n\nb) Is not correct\n\nc) Is correct. At this point you know that your testers are able to code what is needed. The project schedule is not really a factor because any tool will take time to acquire and integrate, but the developers can code in it, so that is the main schedule factor. What you need to know is can this tool simulate the necessary number of virtual users and, of course, how much will it cost\n\nd) Is not correct"
+    }
+  ]
+}

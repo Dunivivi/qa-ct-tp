@@ -1,0 +1,792 @@
+{
+  "site": "ASTQB / AT*SQA (atsqa.org) - official ISTQB member board",
+  "exam": "ISTQB Performance Testing (CT-PT) - ASTQB Sample Exam 1 (2019, v1.1)",
+  "source": {
+    "questions": "https://atsqa.org/assets/documents/ASTQB-Performance-Testing-Sample-Exam-2019-Questions.pdf",
+    "answers": "https://atsqa.org/assets/documents/ASTQB-Performance-Testing-Sample-Exam-2019-Answers.pdf"
+  },
+  "copyright": "American Software Testing Qualifications Board - may be copied if the source is acknowledged.",
+  "notes": "Q27 asks to choose between 4 charts; see the PNG files in astqb-2019-q27-charts/ (chart 1-2 on page-10, charts 3-4 on page-11).",
+  "scrapedAt": "2026-11-16T14:02:35+00:00",
+  "totalQuestions": 40,
+  "questions": [
+    {
+      "number": 1,
+      "learningObjective": "PTFL-1.1.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is an important principle of performance testing regarding results?",
+      "choices": {
+        "A": "The results must be identical to those returned when the same tests are run in the production environment",
+        "B": "The results must prove that the system meets or exceeds user expectations",
+        "C": "The results must be in a form that allows comparison to the expectations of the users",
+        "D": "The results must be reported via a dashboard for use by executive management"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The results must be in a form that allows comparison to the expectations of the users"
+      ],
+      "explanation": "C is correct. The results from the test must be in a form that allows comparison to the expectations of the users. For example, if the users expect sub 2 second response time with 500 users on the system, then the tests must simulate the same environment to allow the comparison. A is not correct because \"identical\" is unlikely. Representative or statistically identical is possible, but not truly identical. B is not correct because the results may not meet the user expectations. The system may just be slow. D is not correct because results usually have to be formatted for consumption by executive management. A dashboard may be the preferable method, but other options exist as well."
+    },
+    {
+      "number": 2,
+      "learningObjective": "PTFL-1.2.1",
+      "type": "multiple_choice",
+      "question": "How does load testing differ from stress testing?",
+      "choices": {
+        "A": "Load testing concentrates on the highest expected load while stress testing concentrates on maintaining a high load for a period of time",
+        "B": "Load testing concentrates on quick increases and decreases of load while stress testing concentrates on maintaining a high load for a period of time",
+        "C": "Load testing and stress testing are actually the same thing",
+        "D": "Load testing concentrate on increasing levels of realistic load while stress testing focuses on loads that are at or beyond the expected peak load"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Load testing concentrate on increasing levels of realistic load while stress testing focuses on loads that are at or beyond the expected peak load"
+      ],
+      "explanation": "D is correct. Load testing looks at increasing the load on a system, but staying within realistic boundaries. Stress testing pushes the load to and above the expected highest load to see how the system responds."
+    },
+    {
+      "number": 3,
+      "learningObjective": "PTFL-1.2.1",
+      "type": "multiple_choice",
+      "question": "If performance testing is being conducted to determine that a system under load can increase its capacity as more memory is allocated to it, what type of testing is being conducted?",
+      "choices": {
+        "A": "Load testing",
+        "B": "Stress testing",
+        "C": "Scalability testing",
+        "D": "Spike testing"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Scalability testing"
+      ],
+      "explanation": "C is correct. This type of testing is looking to see if the system can scale up to handle larger loads."
+    },
+    {
+      "number": 4,
+      "learningObjective": "PTFL-1.3.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is an important static activity in performance testing?",
+      "choices": {
+        "A": "Reviewing outstanding usability defect reports",
+        "B": "Reviewing the system architecture",
+        "C": "Reviewing the security requirements for the system",
+        "D": "Reviewing the functional requirements"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Reviewing the system architecture"
+      ],
+      "explanation": "B is correct, this is one of the important activities. A is incorrect as it is dealing with usability reports. Reviewing defect reports regarding performance would be a good activity. C is not correct because it's looking at security rather than performance, although security changes can result in performance impact. D is not correct because the functional requirements will not yield the performance requirements – those would be non-functional requirements."
+    },
+    {
+      "number": 5,
+      "learningObjective": "PTFL-1.4.1",
+      "type": "multiple_choice",
+      "question": "Why is a stable user interface important when the load will be generated from that interface?",
+      "choices": {
+        "A": "Because changes to the interface may necessitate changes in the performance scripts",
+        "B": "Because defects in the interface will cause performance degradation",
+        "C": "Because the APIs used by the interface will have to be changed",
+        "D": "Because the full user experience cannot be determined until the interface is stable"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Because changes to the interface may necessitate changes in the performance scripts"
+      ],
+      "explanation": "A is correct. When the load generation tool is using the user interface, any changes to that interface can break the scripts and require re-work. B is not correct because although defects could cause performance issues, there's no guarantee that they will. In fact, the defects could increase the performance in some cases. C is not correct because changes to the API will not necessarily be required when the UI is being updated. D is not correct because this would happen in a usability exercise, not a performance exercise."
+    },
+    {
+      "number": 6,
+      "learningObjective": "PTFL-1.5.1",
+      "type": "multiple_choice",
+      "question": "What is a likely cause of a system responding slowly only under a heavy load?",
+      "choices": {
+        "A": "A network latency issue that should have been visible during functional testing",
+        "B": "A slow memory leak",
+        "C": "A lack of indexing on a database table",
+        "D": "A saturation or exhaustion of a system resource"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "A saturation or exhaustion of a system resource"
+      ],
+      "explanation": "D is correct. This type of performance issue normally is caused by a saturation or exhaustion of a needed resource such as database connections, memory, disk space, etc. A is not correct because this only occurs under a heavy load and that wouldn't have occurred during functional testing. B is not correct because this would have appeared as a gradual slowdown of the system as memory became more scarce. C is not correct because this would have been evident based on the amount of data in the database rather than the load on the system."
+    },
+    {
+      "number": 7,
+      "learningObjective": "PTFL-2.1.1",
+      "type": "multiple_choice",
+      "question": "If you are measuring the time it takes for a system to be restored from a backup, what type of environment are you considering?",
+      "choices": {
+        "A": "Technical",
+        "B": "Business",
+        "C": "Operational",
+        "D": "Virtual"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Operational"
+      ],
+      "explanation": "C is correct. Time to restore backups is categorized as an operational environment measurement."
+    },
+    {
+      "number": 8,
+      "learningObjective": "PTFL-2.2.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is an advantage to aggregating test results?",
+      "choices": {
+        "A": "It's easier to see the overall performance of a system",
+        "B": "It's easier to see the specific performance of a specific test",
+        "C": "It's easier to understand the length and frequency of any slow periods",
+        "D": "It's easier to capture the ramp-up and ramp-down time anomalies"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "It's easier to see the overall performance of a system"
+      ],
+      "explanation": "A is correct. Aggregating the data provides a summary of the testing data and removes any small performance issues that are not indicative of the overall performance. B is not correct because the data is combined rather than reported separately. C is not correct because unless a slow period is indicative of general performance it will likely be smoothed out in the aggregate report. D is not correct because the ramp-up and ramp-down times are usually excluded to provide a more realistic overall picture."
+    },
+    {
+      "number": 9,
+      "learningObjective": "PTFL-2.3.1",
+      "type": "multiple_choice",
+      "question": "During or after a performance test, what type of information should you check for in the server logs?",
+      "choices": {
+        "A": "Number of concurrent users on the system at a particular point in time",
+        "B": "A graph of the system performance during the test",
+        "C": "Defects that were reported during the testing",
+        "D": "Memory errors and database errors that occurred during the test"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Memory errors and database errors that occurred during the test"
+      ],
+      "explanation": "D is correct. This information is normally captured in the server logs. A and B would normally be shown by a performance monitoring tool. C would have to be recorded manually into a defect management system and reported from there. A log might highlight a failure, but the actual defect would have to be determined after more analysis."
+    },
+    {
+      "number": 10,
+      "learningObjective": "PTFL-2.4.1",
+      "type": "multiple_choice",
+      "question": "If you are testing to understand how many users can use a site at the same time, what test result is particularly interesting to you?",
+      "choices": {
+        "A": "Throughput of data",
+        "B": "Business process efficiency",
+        "C": "Concurrency of usage",
+        "D": "Timing of usage"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Concurrency of usage"
+      ],
+      "explanation": "C is correct. In this case, you want to see how many users can use the system concurrently (at the same time). A, B and D might be interesting, but that will not answer the question."
+    },
+    {
+      "number": 11,
+      "learningObjective": "PTFL-3.1.1",
+      "type": "multiple_choice",
+      "question": "Why are good test monitoring and control measures so important in performance testing?",
+      "choices": {
+        "A": "Because testing can lag behind schedule and more testers may be required to complete the work",
+        "B": "Because environment changes can invalidate test results so being aware of these changes is critical",
+        "C": "Because it is difficult to define the performance requirements in a measurable way",
+        "D": "Because test design often requires building modular tests that can later be combined into larger suites for execution"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Because environment changes can invalidate test results so being aware of these changes is critical"
+      ],
+      "explanation": "B is correct. Performance testing is particularly sensitive to environment changes and careful monitoring of any changes and control measures to prevent or schedule such changes is critically important. A is not correct because adding more testers doesn't help performance testing. C is not correct because, while the statement is often true, adding good monitoring and control won't help. D is not correct because this is a normal process of test design for a performance testing exercise."
+    },
+    {
+      "number": 12,
+      "learningObjective": "PTFL-3.1.1",
+      "type": "multiple_choice",
+      "question": "How often should performance testing be conducted?",
+      "choices": {
+        "A": "Once, after system testing has been completed",
+        "B": "Multiple times, after system testing has been completed",
+        "C": "Twice for each test level",
+        "D": "Multiple times, at all test levels"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "Multiple times, at all test levels"
+      ],
+      "explanation": "D is correct. Performance testing should be conducted as an ongoing activity and performed multiple times and at all levels of testing (unit, integration, system, SIT and acceptance)."
+    },
+    {
+      "number": 13,
+      "learningObjective": "PTFL-3.2.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is the most likely performance risk for a distributed system?",
+      "choices": {
+        "A": "Problems with critical workflows or dataflows to or from remote servers",
+        "B": "Problems with excessive load on the hardware due to improper configuration of the host virtual machine",
+        "C": "Problems with network connection at the client connection point",
+        "D": "Problems with new traffic via APIs that overload established applications"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Problems with critical workflows or dataflows to or from remote servers"
+      ],
+      "explanation": "A is correct. This is a problem that is likely to occur in particular with distributed systems. B is a problem most likely to occur with a virtualized system. C is most likely to occur with a client-server system. D is most likely to occur with a mainframe application."
+    },
+    {
+      "number": 14,
+      "learningObjective": "PTFL-3.2.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is the most likely performance risk for a client-server system?",
+      "choices": {
+        "A": "Problems with critical workflows or dataflows to or from remote servers",
+        "B": "Problems with excessive load on the hardware due to improper configuration of the host virtual machine",
+        "C": "Problems with network connection at the client connection point",
+        "D": "Problems with new traffic via APIs that overload established applications"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Problems with network connection at the client connection point"
+      ],
+      "explanation": "C is correct. This is a problem that is most likely to occur with a client-server system. A is a problem that is likely to occur in particular with distributed systems. B is a problem most likely to occur with a virtualized system. D is most likely to occur with a mainframe application."
+    },
+    {
+      "number": 15,
+      "learningObjective": "PTFL-3.2.1",
+      "type": "multiple_choice",
+      "question": "Which of the following is the most likely performance risk for a virtualized system?",
+      "choices": {
+        "A": "Problems with critical workflows or dataflows to or from remote servers",
+        "B": "Problems with excessive load on the hardware due to improper configuration of the host virtual machine",
+        "C": "Problems with network connection at the client connection point",
+        "D": "Problems with new traffic via APIs that overload established applications"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Problems with excessive load on the hardware due to improper configuration of the host virtual machine"
+      ],
+      "explanation": "B is correct. This is a problem most likely to occur with a virtualized system. A is a problem that is likely to occur in particular with distributed systems. C is most likely to occur with a client-server system. D is most likely to occur with a mainframe application."
+    },
+    {
+      "number": 16,
+      "learningObjective": "PTFL-3.3.1",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "The technical stakeholders on the project are available for a one-day performance risk analysis session. Of the risks in this product, which one is best analyzed by these stakeholders?",
+      "choices": {
+        "A": "The time that will be required to get the information from the sensors into the application",
+        "B": "The time that will be required to communicate through the API to the display board",
+        "C": "The time that will be required for a judge to enter a disqualification status",
+        "D": "The time that will be required for the data to be available on the mobile applications"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "The time that will be required to get the information from the sensors into the application"
+      ],
+      "explanation": "A is correct. Given that these are technical stakeholders, the issues that may arise around getting near real time information from the sensors is the highest priority. Their input in the other areas would be helpful as well, but the technical problems are likely to occur in the interface between the sensors and the software. B is not correct because issues with the API can likely be addressed with software changes and it's fairly unlikely that just the API will be problematic. C is not correct. The judges have five minutes to enter their disqualification information so assuming the UI isn't complex this shouldn't be a"
+    },
+    {
+      "number": 17,
+      "learningObjective": "PTFL-3.4.1",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have determined that testing the mobile application will require an expensive cloud resource that will supply simulated and real devices. Setting this up will not be a major effort, but you will be billed for each minute of use as well as for each device (simulated or real) that is used.\nYour development lifecycle methodology is agile.\nGiven this information, what is the best time to conduct the full performance test for the mobile application?",
+      "choices": {
+        "A": "As part of CI/CD, for each build",
+        "B": "As part of each iteration, toward the end of the iteration",
+        "C": "As part of a separate iteration which will occur when the software is functionally stable",
+        "D": "As part of the final release testing, after the regression testing has been successfully completed"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "As part of a separate iteration which will occur when the software is functionally stable"
+      ],
+      "explanation": "C is correct. Because of the expense of the environment, you don't want to run this test too early or too often but you do want to run it as soon as you can. Executing when the software is functionally stable will help reduce the need to re-run the tests as changes are made to the software to add features or fix defects. A is not correct because it would be too expensive and would require stubbing. B is not correct because it would be too early and too expensive. D is not correct because it's too late to fix anything that is found."
+    },
+    {
+      "number": 18,
+      "learningObjective": "PTFL-4.1.1",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "The expected data to be viewed on the mobile devices is:\n• Results that are automatically displayed when each racer completes their run • Final results that are automatically displayed when the race is completed • Summary of all racers that were disqualified • Ranking board showing the top five racers – updated when each racer completes their run The acceptable time (90% of the transactions) for the automatic results to be received is 3 seconds.\nFor information that is queried (summary and ranking board), the acceptable response time (for 90% of the transactions) is 5 seconds.\nWhat additional information do you need to derive the performance test objectives?",
+      "choices": {
+        "A": "A description of the devices that will be used",
+        "B": "A description of the handling that will occur when connectivity is lost",
+        "C": "A list of the system resources that should be tracked and the expected usage of those resources",
+        "D": "A list of all other applications that are expected to be running on the target devices throughout the tests"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "A list of the system resources that should be tracked and the expected usage of those resources"
+      ],
+      "explanation": "C is correct. To set up the tests you need to know what system resources (memory, network throughput, etc.) need to be tracked and any baseline usage that is expected. A is not correct because the actual devices will not be used for this test. B is not correct because handling connectivity issues is a functional issue even though it can significantly impact performance. D is not correct because the performance tests will be using simulated devices which will assume full usage of the device's capabilities. There is no way to know what other applications might be running – there are too many options."
+    },
+    {
+      "number": 19,
+      "learningObjective": "PTFL-4.1.2",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have been asked to prepare a performance test plan. Given the project information that has been supplied, what type of performance testing will be the most important for this project?",
+      "choices": {
+        "A": "Spike testing",
+        "B": "Stress testing",
+        "C": "Endurance testing",
+        "D": "Scalability testing"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Spike testing"
+      ],
+      "explanation": "A is correct. Spike testing is going to be very important because of the sudden loads when an important race is being run and then the return to a quiescent state between races. B would be good to do, but if the peak load is known, that can be covered in the spike testing. C is not correct because the system does not need to run for a long time. Worst case, you could reboot between events. D is not correct because the goal is not to determine if resources can be added to deal with increasing loads. This is a short-term usage system."
+    },
+    {
+      "number": 20,
+      "learningObjective": "PTFL-4.1.3",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have run one cycle of performance tests. You have accumulated the following metrics:\nVirtual users = 100,000 Virtual users successfully completing all transactions = 97% Transaction time for results that are automatically displayed when each racer completes their run Average = 2 seconds, 90% = 3 seconds, 95% = 5 seconds Transaction time for final results that are automatically displayed when the race is completed Average = 1 second, 90% = 3 seconds, 95% = 4 seconds Transaction time for summary of all racers that were disqualified Average = 6 seconds, 90% = 7 seconds, 95% = 8 seconds Transaction time for ranking board showing the top five racers Average = 4 seconds, 90% = 5 seconds, 95% = 9 seconds The acceptable time (90% of the transactions) for the automatic results to be received is 3 seconds.\nFor information that is queried (summary and ranking board), the acceptable response time (for 90% of the transactions) is 5 seconds.\nFor this information, you have created the following report:\nTransaction Time Results Individual run completion Met Race completion Met Disqualifications Too slow Ranking board Met For which stakeholder group would this report be most appropriate?",
+      "choices": {
+        "A": "Stakeholders with a business focus",
+        "B": "Stakeholders with a technology focus",
+        "C": "Future product users",
+        "D": "Competitors"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Stakeholders with a business focus"
+      ],
+      "explanation": "A is correct. This is a high-level report that is most appropriate for stakeholders that have a general business focus. B is not correct because the technical stakeholders would want more details. C is not correct because presumably the slow problem will be fixed prior to release. D is not correct because arming competitors with defect information is never a good idea."
+    },
+    {
+      "number": 21,
+      "learningObjective": "PTFL-4.1.3",
+      "type": "multiple_choice",
+      "scenarioNote": "Refers to the scenario of question 20.",
+      "question": "Considering the previous scenario and disregarding the performance times, what information would be most interesting to the technical stakeholders?",
+      "choices": {
+        "A": "How the virtual users were created",
+        "B": "The ramp-up and ramp-down times needed for all users",
+        "C": "What caused 3% of the transactions to fail to complete",
+        "D": "Which environment was used for the tests"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "What caused 3% of the transactions to fail to complete"
+      ],
+      "explanation": "C is correct. Technical users will want to know what happened with the 3% that failed. As they are troubleshooting, they may be interested in D, but that won't be the first area to investigate. A and B are not correct because the creation of the users and the time required to complete the transactions is not in question here."
+    },
+    {
+      "number": 22,
+      "learningObjective": "PTFL-4.2.1",
+      "type": "multiple_choice",
+      "question": "In the OSI model layers, which layers are most commonly accessed for performance testing?",
+      "choices": {
+        "A": "Layers 1 – 3",
+        "B": "Layers 3 – 5",
+        "C": "Layers 5 – 7",
+        "D": "Layers 7 – 9"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Layers 5 – 7"
+      ],
+      "explanation": "C is correct. Layer 5 (session layer) to Layer 7 (application layer) are the most commonly used."
+    },
+    {
+      "number": 23,
+      "learningObjective": "PTFL-4.2.1",
+      "type": "multiple_choice",
+      "question": "If you are conducting performance testing with particular emphasis on database access, which protocol are you likely using for the testing?",
+      "choices": {
+        "A": "HTTP",
+        "B": "ODBC",
+        "C": "REST",
+        "D": "HTML"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "ODBC"
+      ],
+      "explanation": "B is correct. ODBC is an open database protocol that is commonly used for database communication. JDBC is the java version of the protocol. HTTP and HTML are web protocols and REST is a web service protocol."
+    },
+    {
+      "number": 24,
+      "learningObjective": "PTFL-4.2.2",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "Which of the following is an example of a transaction?",
+      "choices": {
+        "A": "Requesting a current ranking list",
+        "B": "Receiving and viewing an individual skier's results",
+        "C": "Entering a disqualification request",
+        "D": "Printing the final ranking from a particular race"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Receiving and viewing an individual skier's results"
+      ],
+      "explanation": "B is correct. This is a complete request. The information is pushed from the service and received by the mobile application. The user then views this information. A is not a complete transaction because the request is not fulfilled. C is not a complete transaction because the disqualification"
+    },
+    {
+      "number": 25,
+      "learningObjective": "PTFL-4.2.2",
+      "type": "multiple_choice",
+      "question": "Why is it important to include think time when creating performance test scripts?",
+      "choices": {
+        "A": "Because the system needs time to ramp-up and ramp-down",
+        "B": "Because users tend to pause during transactions to read screens, absorb information or navigate",
+        "C": "Because performance testers must carefully include every step a user will follow, requiring them to \"think\" as they script",
+        "D": "Because systems cannot keep up with transactions that are received from multiple scripts"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "Because users tend to pause during transactions to read screens, absorb information or navigate"
+      ],
+      "explanation": "B is correct. Think time is used to simulate a real user's interaction with the system."
+    },
+    {
+      "number": 26,
+      "learningObjective": "PTFL-4.2.3",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have identified three operational profiles for the product:\n1. The mobile user who checks the results for every race on their phone 2. The judge who enters disqualification status information during and immediately after a race 3. The broadcast companies who access the data through the API What operational profile are you missing?",
+      "choices": {
+        "A": "The skier",
+        "B": "The audience who is viewing the display board with the scores",
+        "C": "The display board itself",
+        "D": "Mobile users who are at the race and are checking the results for every race on their phone"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The display board itself"
+      ],
+      "explanation": "C is correct. The display board is receiving the information from the application and is a component of the overall system. A is not correct because the skier does not actually use the data. B is not correct because they are viewing the results of the data manipulation by the display board, which is one step removed from the product. D is not correct because these folks are the same as those described in #1."
+    },
+    {
+      "number": 27,
+      "learningObjective": "PTFL-4.2.4",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "images": [
+        "astqb-2019-q27-charts/page-10.png",
+        "astqb-2019-q27-charts/page-11.png"
+      ],
+      "question": "You have identified that you expect to have a load of 100,000 users for a high interest race and 20,000 users for a low-interest race. There are 5,000 users who seem to always be connected, even when nothing is happening.\nHigh-interest races are the semi-finals and finals for any particular contest. A race normally lasts for 5 minutes and there are usually 8 racers in the semi-finals and 4 racers in the finals. A low-interest race is any of the first 30 races that lead to determining who will be in the semi-finals.\nWhich of the following is a correct diagram of the proper load profile for one contest (the x axis shows hh:mm and the y axis shows number of users)?",
+      "choices": {
+        "A": "Chart 1",
+        "B": "Chart 2",
+        "C": "Chart 3",
+        "D": "Chart 4"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Chart 1"
+      ],
+      "explanation": "A is correct. This shows the proper ramp-up and down for the expected users. B is not correct because it does not show the 5000 users who are always connected and will be there before ramp-up and after ramp-down. C is not correct because the 20,000 users don't start until 20 minutes into the test and the 100,000 users start too soon (should start at 2:30). D is not correct because that is just an average across all usages."
+    },
+    {
+      "number": 28,
+      "learningObjective": "PTFL-4.2.5",
+      "type": "multiple_choice",
+      "scenarioNote": "Refers to the scenario of question 27.",
+      "question": "In the scenario above, for a given contest with 30 racers, what is the expected throughput for the automatic results display for one phone?",
+      "choices": {
+        "A": "30",
+        "B": "43",
+        "C": "20,000",
+        "D": "100,000"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "43"
+      ],
+      "explanation": "B is correct. The throughput for one phone for the automatic race results is 30 + 8 + 4 for the individual races + 1 for the final results = 43."
+    },
+    {
+      "number": 29,
+      "learningObjective": "PTFL-4.2.6",
+      "type": "multiple_choice",
+      "question": "Why is it important to have a clean-up section in a performance test script?",
+      "choices": {
+        "A": "To ensure that data is collected for response time reporting",
+        "B": "To ensure any errors are recorded and data issues are resolved",
+        "C": "To ensure the system is reset to a point that the script can be run again",
+        "D": "To ensure the operator is informed that the test has been completed"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "To ensure the system is reset to a point that the script can be run again"
+      ],
+      "explanation": "C is correct. The purpose of the clean-up is to reset the system back to the state it was in before the test was run – or as much as possible. This enables the script to be run again. The clean-up may include deleting created data or recreated data that was deleted during the script execution. A and B are not correct because reporting data and errors should be gathered throughout the execution. D is not correct because the tool will inform the operator when the script(s) have completed; this doesn't have to be scripted."
+    },
+    {
+      "number": 30,
+      "learningObjective": "PTFL-4.2.6",
+      "type": "multiple_choice",
+      "question": "Which of the following is a good practice when adding verification logic to a script?",
+      "choices": {
+        "A": "Try to add data that has already been added",
+        "B": "Try to delete data that has already been deleted",
+        "C": "Verify that the transactions have completed by querying the database to see if the data was changed correctly",
+        "D": "Verify that no errors have been recorded by the script and that no errors have been recorded in the system logs"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Verify that the transactions have completed by querying the database to see if the data was changed correctly"
+      ],
+      "explanation": "C is correct. A good practice is to verify that the transactions are actually completing. This is usually done by checking via an independent method such as querying the database to see if created data is there and deleted data is not. A and B are not correct because these transactions could also fail, giving a false negative. D is not correct because the errors have already been recorded by the script. Adding system log verification to the script is tricky. It's usually better to use a log analysis tool to check for interesting errors."
+    },
+    {
+      "number": 31,
+      "learningObjective": "PTFL-4.2.7",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have identified that you expect to have a load of 100,000 users for a high interest race and 20,000 users for a low-interest race. There are 5,000 users who seem to always be connected, even when nothing is happening.\nYou have been looking at purchasing a load testing tool, but you have found that licenses for virtual users are very expensive. What is the minimum number of virtual users you will need to conduct a load test for this application?",
+      "choices": {
+        "A": "5,000 since that is the base load",
+        "B": "10,000 and extrapolate the results to 100,000",
+        "C": "20,000 with all think time removed",
+        "D": "100,000 each creating the expected throughput"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "100,000 each creating the expected throughput"
+      ],
+      "explanation": "D is correct. You need the full set of virtual users to adequately test this application. Even testing with 100,000 may be risky since the application may be more widely used than expected. Stress testing would be wise. A is too low. B is dangerous because systems don't normally degrade in a linear fashion. C is also dangerous because 20,000 users with no think time may very well flood the system. In this case, it's also not valid because the information is being sent to the users automatically – they are not requesting it, so no think time is actually involved."
+    },
+    {
+      "number": 32,
+      "learningObjective": "PTFL-4.2.7",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "The judges must log in with a username and password before they are allowed to enter any disqualifications. A judge normally logs in once for a race and may enter several disqualifications during that race. How will correlation be needed when creating the performance scripts for the judges' interactions?",
+      "choices": {
+        "A": "It will be needed to ensure the judge's session information is recorded with their disqualification entries",
+        "B": "It will be needed to ensure the disqualification is recorded against the correct skier",
+        "C": "It will be needed to time a disqualification correctly during the race to ensure it is within the 5- minute time limit",
+        "D": "It will be needed to ensure the results correctly record the judge's information"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "It will be needed to ensure the judge's session information is recorded with their disqualification entries"
+      ],
+      "explanation": "A is correct. hen the judge logs in, he is creating a session. That session information, including the information associated with the judge himself, must be used to record the disqualification. Since the user name and password will be handled potentially by a system variable, that information may have to be correlated manually in the test script. B, C and D don't pertain to the"
+    },
+    {
+      "number": 33,
+      "learningObjective": "PTFL-4.2.8",
+      "type": "multiple_choice",
+      "question": "What is the best environment to use for performance testing?",
+      "choices": {
+        "A": "The production environment",
+        "B": "A complete replica of the production environment",
+        "C": "The sandbox environment",
+        "D": "The development environment"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "A complete replica of the production environment"
+      ],
+      "explanation": "B is correct. The more similar the performance test environment to production, the more accurate the test results. A is not correct because running performance tests in production can have serious consequences if the production system is impacted by the tests (e.g., slowed down, crashed). C is not a good candidate since a sandbox environment should not be used for performance testing. D is not a good candidate because it usually is not a good representation of the production environment and often contains code that is not tested or ready for performance testing."
+    },
+    {
+      "number": 34,
+      "learningObjective": "PTFL-4.2.8",
+      "type": "multiple_choice",
+      "question": "When would it be appropriate to use service virtualization?",
+      "choices": {
+        "A": "When a web service resides in a virtual machine",
+        "B": "When the cloud is being used for testing",
+        "C": "When the performance testing tool is a SaaS",
+        "D": "When the service to be used is not available"
+      },
+      "correctAnswers": [
+        "D"
+      ],
+      "correctAnswerText": [
+        "When the service to be used is not available"
+      ],
+      "explanation": "D is correct. Service virtualization is used to replace or emulate a component of the system that is not available for some reason. A is not correct. Services that reside in VMs look the same as services on a physical machine. B is not correct. You might want to use service virtualization, but that would not be required just because it is a cloud implementation. C is not correct. If the performance testing tool is a Software as a Service tool, it has no bearing on the services that it is testing."
+    },
+    {
+      "number": 35,
+      "learningObjective": "PTFL-4.3.1",
+      "type": "multiple_choice",
+      "question": "What should be done immediately after the ramp-up is completed for a performance test?",
+      "choices": {
+        "A": "Start the step-up load of virtual users",
+        "B": "Initiate the ramp-down",
+        "C": "Wait until the system has reached a steady state, then start the step-up",
+        "D": "Bring on the full load of virtual users"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "Wait until the system has reached a steady state, then start the step-up"
+      ],
+      "explanation": "C is correct. It's important to let the system reach a steady state before starting to load on users. Depending on the scenario you are testing, A or D would be the correct thing to do once the steady state has been reached. B is only done at the end of the test."
+    },
+    {
+      "number": 36,
+      "learningObjective": "PTFL-4.3.1",
+      "type": "multiple_choice",
+      "question": "Should manual tests be run during performance testing?",
+      "choices": {
+        "A": "Yes, this will help to verify that the performance being recorded by the tool is accurate",
+        "B": "Yes, this will help verify that there are no functional issues occurring",
+        "C": "No, this is likely to interfere with the metrics being gathered by the performance testing tools",
+        "D": "No, this can give a false impression to the users regarding the performance they will experience with the released product"
+      },
+      "correctAnswers": [
+        "A"
+      ],
+      "correctAnswerText": [
+        "Yes, this will help to verify that the performance being recorded by the tool is accurate"
+      ],
+      "explanation": "A is correct. Doing manual checking of the performance during performance testing will help supply ad hoc measurements that can be used to validate the measurements that the tool is gathering. B is not correct because running the same scripts as the tool should not find functional issues. If it does, the system was not ready for performance testing. C is not correct because one or two manual users is not creating a significant load for the system. D is not correct because end users would not be involved in this testing as it might yield frightening results before the system is tuned."
+    },
+    {
+      "number": 37,
+      "learningObjective": "PTFL-4.4.1",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "You have run one cycle of performance tests. You have accumulated the following metrics:\nVirtual users = 100,000 Virtual users successfully completing all transactions = 97% Transaction time for results that are automatically displayed when each racer completes their run Average = 2 seconds, 90% = 3 seconds, 95% = 5 seconds Transaction time for results that are automatically displayed when the race is completed Average = 1 second, 90% = 3 seconds, 95% = 4 seconds Transaction time for summary of all racers that were disqualified Average = 6 seconds, 90% = 7 seconds, 95% = 8 seconds Transaction time for ranking board showing the top five racers Average = 4 seconds, 90% = 5 seconds, 95% = 9 seconds The acceptable time (for 90% of the transactions) for the automatic results to be received is 3 seconds.\nFor information that is queried (summary and ranking board), the acceptable response time (for 90% of the transactions) is 5 seconds.\nGiven this information, which scenarios will require system tuning and further testing?",
+      "choices": {
+        "A": "All of them because these results are for only one run",
+        "B": "The automatic displays because their 95% numbers are too slow",
+        "C": "The summary of disqualifications because all times are too slow",
+        "D": "The ranking board because this is a time critical part of the system and the 95% numbers are too slow"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "The summary of disqualifications because all times are too slow"
+      ],
+      "explanation": "C is correct. The disqualifications time is too slow, particularly for the 90%, but it's also too slow even for the average. Tuning and retesting will be required. A may be correct and will probably need to happen, but not until C is resolved. B and D are worrying about the 95% numbers, but those are not in the requirements."
+    },
+    {
+      "number": 38,
+      "learningObjective": "PTFL-5.1.1",
+      "type": "multiple_choice",
+      "question": "What is the basis for the scripts executed by a load generator to simulate user behavior?",
+      "choices": {
+        "A": "The expected number of virtual users",
+        "B": "The defined operational profiles",
+        "C": "The defined load profiles",
+        "D": "The expected system response time"
+      },
+      "correctAnswers": [
+        "B"
+      ],
+      "correctAnswerText": [
+        "The defined operational profiles"
+      ],
+      "explanation": "B is correct. The load generator creates and executes multiple client instances that simulate user behavior according to a defined operational profile. A is not correct because while the number of users simulated depends on the defined number of virtual users, this is not the basis for the behaviors. C is not correct. Load profiles are based on the selected combination of operational profiles. D is used to compare the actual results to the expected results."
+    },
+    {
+      "number": 39,
+      "learningObjective": "PTFL-5.1.1",
+      "type": "multiple_choice",
+      "question": "What is a function of the load management console of a performance testing tool?",
+      "choices": {
+        "A": "To manage the activities of the virtual users",
+        "B": "To provide raw data for executive management",
+        "C": "To start and stop the tests",
+        "D": "To handle error recovery for a test script"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "To start and stop the tests"
+      ],
+      "explanation": "C is correct. The management console starts and stops the tests and aggregates metrics during the tests. A is not correct because these activities are dictated by the scripts. B is not correct because the graphs produced by these tools are fitting for technical consumption, not executive management. D is not correct because error reporting is shown in the console, but error recovery must be scripted."
+    },
+    {
+      "number": 40,
+      "learningObjective": "PTFL-5.2.1",
+      "type": "multiple_choice",
+      "scenario": "You are working for a company that has developed software that will be used in the Olympic skiing events to track and post times. This software will take data from various sensors to determine start and finish times for each individual racer as they race one at a time. It will also allow judges to enter a disqualification status for an individual skier at any time during their run and within 5 minutes of the end of their run. The information will be sent through an API to software that will control the display board at the event and to the interface used by the broadcast communities. Your company has also developed a mobile application that will be available for free download to anyone in the world who wants to receive \"real time\" results from the events. Testing for the mobile application will be done in the cloud using device simulators.",
+      "question": "Is it suitable to use simulators in the cloud for all performance testing?",
+      "choices": {
+        "A": "Yes, simulators will be cost effective and accurate enough for this testing",
+        "B": "No, emulators will be needed for all transactions to ensure the information is displayed correctly",
+        "C": "No, cloud simulators can be used for the phone testing, but emulators or the real device will be needed to test the communication with the display board",
+        "D": "No, testing should be conducted on real devices to verify the usability as well as the performance"
+      },
+      "correctAnswers": [
+        "C"
+      ],
+      "correctAnswerText": [
+        "No, cloud simulators can be used for the phone testing, but emulators or the real device will be needed to test the communication with the display board"
+      ],
+      "explanation": "C is correct. The communication with the display board will require either an emulator or the real device to ensure the communication is fast enough to suit the needs of the"
+    }
+  ]
+}

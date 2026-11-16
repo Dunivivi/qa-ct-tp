@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist/ctpt-practice/browser"
+
+# Node version comes from .nvmrc (22.x, an Angular-supported LTS).
+
+# Client-side routes (/browse, /results/:id, …) must all serve the app shell.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

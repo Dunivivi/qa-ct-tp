@@ -1,59 +1,53 @@
-# CtptPractice
+# CT-PT Practice
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Personal practice site for the ISTQB Certified Tester – Performance Testing (CT-PT) exam.
+Angular 22 (zoneless, signals), Tailwind 4, Vitest. No backend: progress lives in the browser.
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Run locally
 
 ```bash
-ng generate component component-name
+nvm use                 # Node 22 (.nvmrc) — Angular 22 does not support Node 23
+npx -y npm@11 install   # npm 10.9.2 has an arborist crash on this machine
+npm run sync-data       # copies ../ISTQB performance testing/*.json into public/data
+npm start               # http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+`sync-data` takes the question folder as an optional argument:
+`npm run sync-data -- "/path/to/ISTQB performance testing"`.
 
-```bash
-ng generate --help
-```
+## Where the questions come from
 
-## Building
+| Folder | Committed | Deployed | Contents |
+|---|---|---|---|
+| `public/data/official/` | yes | yes | ISTQB Sample Exam A + ASTQB 2019 (reuse allowed, non-commercial, with credit) |
+| `public/data/sources/` | **no** (gitignored) | **no** (excluded from production builds) | the full verified bank, for local dev |
+| Import page | — | — | any JSON file, stored in this browser's IndexedDB only |
 
-To build the project run:
+The scraped practice banks are third-party content, so they are never committed or deployed.
+On the deployed site, load them through **Import**.
 
-```bash
-ng build
-```
+## Features
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Library**: sources (official / verified) with **All providers** pooling, module cards with progress.
+- **Test builder**: providers × modules, count, time, presets (real exam 40·90 weighted 6/4/7/20/3,
+  quick 10, practice 20, **survival**, **blitz**), exclude flagged, prefer unseen / wrong, shuffle.
+  Remembers your last settings.
+- **Runner**: exam (answers at the end) or practice ("why this is correct" after each), navigator,
+  flags, cross-out, keyboard, countdown + auto-submit, pause, full screen, review screen, resume.
+  Survival ends at the first miss (best streak kept); blitz = 15 s per question, auto-advance.
+- **Learn**: spaced repetition (10 min → 1, 3, 7, 16, 35 days), multiple-choice or flashcards,
+  due-count badge in the header.
+- **Results**: score, pass/fail (or streak), by module and source, review with explanations, retake wrong.
+- **Browse**: filters, search, reveal, bookmarks, notes, hide.
+- **History**: attempts, readiness, accuracy by module, best survival/blitz, CSV export,
+  **progress backup/restore (JSON)**, reset.
+- **Shell**: ⌘K / Ctrl+K command palette, `?` shortcuts sheet, light/dark/system theme,
+  large text, confirm dialogs, skip link. Custom dropdown/checkbox components (`shared/ui`).
 
-## Running unit tests
+## Deploy (Netlify)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Connect the repo; `netlify.toml` sets the build command, publish folder and SPA redirect.
 
-```bash
-ng test
-```
+## Scripts
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`npm test` (Vitest) · `npm run lint` (ESLint + folder boundaries) · `npm run build` · `npm run sync-data`
